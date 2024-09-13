@@ -1,3 +1,5 @@
+"use client";
+import TypingEffect from "../components/TypingEffect";
 import styles from "./home.module.css"; // Import specific styles
 
 export default function Home() {
@@ -11,7 +13,8 @@ export default function Home() {
         />
       </div>
       <h1>Welcome to My Website</h1>
-      <h4>💻 এখানে সিএসই ইঞ্জিনিয়ার দিয়ে গান ডাউনলোড করা হয় 🎵</h4>
+      {/* <h4>💻 এখানে সিএসই ইঞ্জিনিয়ার দিয়ে গান ডাউনলোড করা হয় 🎵</h4> */}
+      <TypingEffect text="💻 এখানে CSE ইঞ্জিনিয়ার দ্বারা গান ডাউনলোড করা হয় 🎵" />
       <p className={styles.paragraph}>
         I am Samin Yeasar, a software engineer 💼 from 🇧🇩. I create 🐛 in
         JavaScript, try to make 🤖 learn cringe things (for now) in Python, and

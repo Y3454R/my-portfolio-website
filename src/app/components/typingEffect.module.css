@@ -1,0 +1,14 @@
+.typingEffect {
+  font-family: "JetBrains Mono", monospace;
+  background: #1e1e1e; /* Dark background for terminal effect */
+  color: #ffffff; /* White text color */
+  border: 1px solid #333; /* Border to mimic terminal */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 80%; /* Adjust based on your design needs */
+  margin: auto;
+  white-space: pre; /* Maintain spacing and line breaks */
+  font-size: 1.2em; /* Adjust the font size as needed */
+  overflow: hidden;
+}
