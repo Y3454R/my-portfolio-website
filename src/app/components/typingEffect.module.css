@@ -6,9 +6,11 @@
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  max-width: 80%; /* Adjust based on your design needs */
+  max-width: 80%; /* Adjust width based on your design */
   margin: auto;
-  white-space: pre; /* Maintain spacing and line breaks */
-  font-size: 1.2em; /* Adjust the font size as needed */
-  overflow: hidden;
+  white-space: nowrap; /* Prevent text from wrapping */
+  font-size: 1.2em;
+  overflow: hidden; /* Hide overflowed text */
+  text-overflow: ellipsis; /* Add ellipsis for visual overflow */
+  direction: rtl; /* Start hiding text from the left side */
 }

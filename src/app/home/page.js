@@ -1,3 +1,4 @@
+/* src/app/home/page.js */
 "use client";
 import TypingEffect from "../components/TypingEffect";
 import styles from "./home.module.css"; // Import specific styles
@@ -7,14 +8,16 @@ export default function Home() {
     <div className={styles.homepage}>
       <div className={styles.profileContainer}>
         <img
-          src="/profile-pic.jpg" // Correct path
+          src="/profile-pic.jpg"
           alt="Profile Picture"
-          className={styles.profilePic} // Apply profilePic class here
+          className={styles.profilePic}
         />
       </div>
-      <h1>Welcome to My Website</h1>
-      {/* <h4>💻 এখানে সিএসই ইঞ্জিনিয়ার দিয়ে গান ডাউনলোড করা হয় 🎵</h4> */}
-      <TypingEffect text="💻 এখানে CSE ইঞ্জিনিয়ার দ্বারা গান ডাউনলোড করা হয় 🎵" />
+      <h1 className={styles.title}>Welcome to My Website</h1>{" "}
+      {/* Add class here */}
+      {/* <div className={styles.typingEffectContainer}> */}
+      <TypingEffect text="💻 এখানে CSE ইঞ্জিনিয়ার দ্বারা গান লোড করা হয় 🎵" />
+      {/* </div> */}
       <p className={styles.paragraph}>
         I am Samin Yeasar, a software engineer 💼 from 🇧🇩. I create 🐛 in
         JavaScript, try to make 🤖 learn cringe things (for now) in Python, and

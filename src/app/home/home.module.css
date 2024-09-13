@@ -5,6 +5,8 @@
   flex-direction: column;
   align-items: center; /* Center content horizontally */
   padding: 2rem;
+  text-align: center; /* Center text for smaller screens */
+  width: 100%;
 }
 
 .profileContainer {
@@ -21,9 +23,49 @@
   border: 3px solid #ddd;
 }
 
-.paragraph {
-  max-width: 400px; /* Restrict paragraph width for a column effect */
-  text-align: justify; /* Justify text like in a news article */
-  line-height: 1.6; /* Improve readability */
+.title {
+  /* New class for h1 */
   margin-bottom: 1rem;
+  font-size: 2rem; /* Adjust for responsiveness */
+}
+
+.typingEffectContainer {
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  height: 2rem; /* Fixed height to limit space for typing effect */
+  white-space: nowrap; /* Prevent text wrapping in typing effect */
+}
+
+.paragraph {
+  max-width: 400px; /* Restrict paragraph width */
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .profilePic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .title {
+    /* Responsiveness for title */
+    font-size: 1.5rem; /* Smaller font size for smaller screens */
+  }
+
+  .paragraph {
+    max-width: 300px; /* Reduce width on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1.2rem; /* Further reduce font size for smaller screens */
+  }
+
+  .paragraph {
+    max-width: 250px;
+  }
 }
