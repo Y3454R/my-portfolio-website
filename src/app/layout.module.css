@@ -1,3 +1,5 @@
+/* src/app/layout.module.css */
+
 .container {
   display: grid;
   grid-template-columns: 250px 1fr; /* Sidebar width and main content */
@@ -6,9 +8,9 @@
 }
 
 .sidebar {
-  background: #f4f4f4; /* Light gray background for the sidebar */
+  background: #f4f4f4;
   padding: 1rem;
-  border-right: 1px solid #ddd; /* Light gray border */
+  border-right: 1px solid #ddd;
 }
 
 .sidebar h2 {
@@ -16,35 +18,59 @@
 }
 
 .sidebar nav ul {
-  list-style: none; /* Remove default list styling */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .sidebar nav ul li {
-  margin-bottom: 1rem; /* Space between items */
+  margin-bottom: 1rem;
 }
 
 .sidebar nav ul li a {
   text-decoration: none;
-  color: #333; /* Change link color to dark gray */
+  color: #333;
   font-weight: bold;
-  display: block; /* Ensure links are block-level elements */
-  transition: transform 0.3s ease, font-size 0.3s ease; /* Add smooth transition */
+  display: flex;
+  align-items: center; /* Align emoji and title */
+  gap: 10px; /* Space between emoji and text */
+  transition: transform 0.3s ease, font-size 0.3s ease;
 }
 
 .sidebar nav ul li a:hover {
   text-decoration: underline;
-  transform: scale(1.1); /* Scale up the element by 10% on hover */
-  font-size: 1.2rem; /* Increase font size on hover */
+  transform: scale(1.1);
 }
 
 .sidebar nav ul li a.active {
-  color: #71b69c; /* Highlight color for active link */
-  font-size: 2rem; /* Increase font size for active link */
-  font-weight: bold; /* Ensure font weight is bold for active link */
+  color: #71b69c;
+  font-weight: bold;
 }
 
-.mainContent {
-  padding: 1rem;
+.emoji {
+  font-size: 1.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  transition: font-size 0.3s ease;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .title {
+    display: none; /* Hide the title on smaller screens */
+  }
+
+  .emoji {
+    font-size: 2rem; /* Optionally make the emoji larger */
+  }
+
+  .container {
+    grid-template-columns: 70px 1fr; /* Smaller sidebar width on mobile */
+  }
+
+  .sidebar {
+    padding: 0.5rem;
+  }
 }

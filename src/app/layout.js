@@ -1,3 +1,4 @@
+/* src/app/layout.js */
 "use client";
 import { usePathname } from "next/navigation"; // Use the new hook for routing
 import "./globals.css"; // Import global styles
@@ -26,7 +27,8 @@ export default function RootLayout({ children }) {
                     href="/home"
                     className={pathname === "/home" ? styles.active : ""}
                   >
-                    🏠 Home
+                    <span className={styles.emoji}>🏠</span>
+                    <span className={styles.title}>Home</span>
                   </a>
                 </li>
                 <li>
@@ -34,7 +36,8 @@ export default function RootLayout({ children }) {
                     href="/about"
                     className={pathname === "/about" ? styles.active : ""}
                   >
-                    ℹ️ About
+                    <span className={styles.emoji}>ℹ️</span>
+                    <span className={styles.title}>About</span>
                   </a>
                 </li>
                 <li>
@@ -42,7 +45,8 @@ export default function RootLayout({ children }) {
                     href="/projects"
                     className={pathname === "/projects" ? styles.active : ""}
                   >
-                    📂 Projects
+                    <span className={styles.emoji}>📂</span>
+                    <span className={styles.title}>Projects</span>
                   </a>
                 </li>
                 <li>
@@ -50,20 +54,14 @@ export default function RootLayout({ children }) {
                     href="/blog"
                     className={pathname === "/blog" ? styles.active : ""}
                   >
-                    📝 Blog
+                    <span className={styles.emoji}>📝</span>
+                    <span className={styles.title}>Blog</span>
                   </a>
                 </li>
-                {/* <li>
-                  <a
-                    href="/shit-posts"
-                    className={pathname === "/shit-posts" ? styles.active : ""}
-                  >
-                    💩 Shit-posts
-                  </a>
-                </li> */}
               </ul>
             </nav>
           </aside>
+
           <main className={styles.mainContent}>{children}</main>
         </div>
       </body>
