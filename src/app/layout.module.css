@@ -39,6 +39,12 @@
   font-size: 1.2rem; /* Increase font size on hover */
 }
 
+.sidebar nav ul li a.active {
+  color: #71b69c; /* Highlight color for active link */
+  font-size: 2rem; /* Increase font size for active link */
+  font-weight: bold; /* Ensure font weight is bold for active link */
+}
+
 .mainContent {
   padding: 1rem;
 }

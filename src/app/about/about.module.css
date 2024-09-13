@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust if needed */
+  text-align: center; /* Center the text horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.terminal {
+  font-family: "JetBrains Mono", monospace;
+  background: #1e1e1e; /* Dark background for a terminal effect */
+  color: #ffffff; /* White text color */
+  border: 1px solid #333; /* Border to mimic terminal */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 80%; /* Adjust based on your design needs */
+  margin: auto;
+}
+
+.typingWrapper {
+  white-space: pre; /* Maintain spacing and line breaks */
+  overflow: hidden;
+  font-size: 1.2em; /* Adjust the font size as needed */
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #00ff00; /* Green cursor for terminal effect */
+  width: 10px;
+  height: 1em;
+  margin-left: 2px;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}

@@ -1,8 +1,11 @@
-// src/app/layout.js
+"use client";
+import { usePathname } from "next/navigation"; // Use the new hook for routing
 import "./globals.css"; // Import global styles
 import styles from "./layout.module.css"; // Import layout-specific styles
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname(); // Get the current path
+
   return (
     <html lang="en">
       <head>
@@ -19,19 +22,44 @@ export default function RootLayout({ children }) {
             <nav>
               <ul>
                 <li>
-                  <a href="/home">🏠 Home</a>
+                  <a
+                    href="/home"
+                    className={pathname === "/home" ? styles.active : ""}
+                  >
+                    🏠 Home
+                  </a>
                 </li>
                 <li>
-                  <a href="/about">ℹ️ About</a>
+                  <a
+                    href="/about"
+                    className={pathname === "/about" ? styles.active : ""}
+                  >
+                    ℹ️ About
+                  </a>
                 </li>
                 <li>
-                  <a href="/projects">📂 Projects</a>
+                  <a
+                    href="/projects"
+                    className={pathname === "/projects" ? styles.active : ""}
+                  >
+                    📂 Projects
+                  </a>
                 </li>
                 <li>
-                  <a href="/blog">📝 Blog</a>
+                  <a
+                    href="/blog"
+                    className={pathname === "/blog" ? styles.active : ""}
+                  >
+                    📝 Blog
+                  </a>
                 </li>
                 <li>
-                  <a href="/blog">💩 Shit-posts</a>
+                  <a
+                    href="/shit-posts"
+                    className={pathname === "/shit-posts" ? styles.active : ""}
+                  >
+                    💩 Shit-posts
+                  </a>
                 </li>
               </ul>
             </nav>
