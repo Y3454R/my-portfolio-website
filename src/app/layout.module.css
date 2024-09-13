@@ -1,0 +1,44 @@
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr; /* Sidebar width and main content */
+  gap: 1rem;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.sidebar {
+  background: #f4f4f4; /* Light gray background for the sidebar */
+  padding: 1rem;
+  border-right: 1px solid #ddd; /* Light gray border */
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar nav ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 1rem; /* Space between items */
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333; /* Change link color to dark gray */
+  font-weight: bold;
+  display: block; /* Ensure links are block-level elements */
+  transition: transform 0.3s ease, font-size 0.3s ease; /* Add smooth transition */
+}
+
+.sidebar nav ul li a:hover {
+  text-decoration: underline;
+  transform: scale(1.1); /* Scale up the element by 10% on hover */
+  font-size: 1.2rem; /* Increase font size on hover */
+}
+
+.mainContent {
+  padding: 1rem;
+}

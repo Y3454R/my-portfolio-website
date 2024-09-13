@@ -1,0 +1,46 @@
+/* globals.css */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap");
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; /* Light gray background */
+  color: #333333; /* Primary text color */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333; /* Heading color */
+}
+
+a {
+  color: #0070f3; /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1rem; /* Standard font size for paragraphs */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Add any additional styling you need */
+
+/* Profile picture */
+.profile-pic {
+  width: 150px; /* Set width to 150px */
+  height: 150px; /* Set height to match width for a perfect circle */
+  border-radius: 50%; /* Circular shape */
+  object-fit: cover; /* Ensure image fits the circle */
+  border: 3px solid #ddd; /* Optional border around the profile picture */
+  margin: 1rem 0; /* Space around the profile picture */
+}

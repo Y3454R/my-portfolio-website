@@ -1,0 +1,59 @@
+/* src/app/blog/page.module.css */
+
+.page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.posts {
+  list-style: none;
+  padding: 0;
+}
+
+.post {
+  margin-bottom: 2rem;
+}
+
+.post h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.post p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.post a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #888;
+}
