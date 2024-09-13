@@ -73,4 +73,8 @@
   .sidebar {
     padding: 0.5rem;
   }
+
+  .sidebar h2 {
+    display: none; /* Hide the "📋 The Menu" heading on smaller screens */
+  }
 }
