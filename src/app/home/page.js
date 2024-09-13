@@ -15,9 +15,9 @@ export default function Home() {
       </div>
       <h1 className={styles.title}>Welcome to My Website</h1>{" "}
       {/* Add class here */}
-      {/* <div className={styles.typingEffectContainer}> */}
-      <TypingEffect text="💻 এখানে CSE ইঞ্জিনিয়ার দ্বারা গান লোড করা হয় 🎵" />
-      {/* </div> */}
+      <div className={styles.typingEffectWrapper}>
+        <TypingEffect text="💻 এখানে CSE ইঞ্জিনিয়ার দ্বারা গান লোড করা হয় 🎵" />
+      </div>
       <p className={styles.paragraph}>
         I am Samin Yeasar, a software engineer 💼 from 🇧🇩. I create 🐛 in
         JavaScript, try to make 🤖 learn cringe things (for now) in Python, and
