@@ -1,5 +1,6 @@
 # Dependency directories
 node_modules/
+.next
 
 # Lock files
 package-lock.json
