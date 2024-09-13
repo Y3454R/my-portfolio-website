@@ -1,42 +1,50 @@
-.container {
+.aboutSection {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh; /* Adjust if needed */
-  text-align: center; /* Center the text horizontally */
-  padding: 20px;
-  box-sizing: border-box;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f7f8fa; /* Light background similar to Notion */
 }
 
-.terminal {
-  font-family: "JetBrains Mono", monospace;
-  background: #1e1e1e; /* Dark background for a terminal effect */
-  color: #ffffff; /* White text color */
-  border: 1px solid #333; /* Border to mimic terminal */
-  padding: 20px;
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.qaContainer {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.qaItem h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.qaItem p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.qaItem {
+  background-color: #fff;
+  padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  max-width: 80%; /* Adjust based on your design needs */
-  margin: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for clean sections */
 }
 
-.typingWrapper {
-  white-space: pre; /* Maintain spacing and line breaks */
-  overflow: hidden;
-  font-size: 1.2em; /* Adjust the font size as needed */
-}
-
-.cursor {
-  display: inline-block;
-  background-color: #00ff00; /* Green cursor for terminal effect */
-  width: 10px;
-  height: 1em;
-  margin-left: 2px;
-  animation: blink 1s step-start infinite;
-}
-
-@keyframes blink {
-  50% {
-    background-color: transparent;
+@media (max-width: 768px) {
+  .qaContainer {
+    padding: 1rem;
   }
 }

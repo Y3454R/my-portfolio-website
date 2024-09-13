@@ -53,14 +53,14 @@ export default function RootLayout({ children }) {
                     📝 Blog
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="/shit-posts"
                     className={pathname === "/shit-posts" ? styles.active : ""}
                   >
                     💩 Shit-posts
                   </a>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </aside>
