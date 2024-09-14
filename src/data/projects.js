@@ -4,7 +4,7 @@ const spanTail = `</span>`;
 const projects = [
   {
     name: "🎨 YeasarVerse",
-    description: `My personal website built with ${spanHead}Next.js${spanTail}. The styling is done with pure ${spanHead}CSS${spanTail} (stupidity, Ikr?). No, I'm not a hacker but I know that you're watching it rn. 🧠`,
+    description: `My personal website built with ${spanHead}Next.js${spanTail}. The styling is done with pure ${spanHead}CSS${spanTail} (stupidity, Ikr?). No, I'm not a hacker but I know that you're browsing it rn. 🧠`,
     link: "https://github.com/Y3454R/my-portfolio-website",
   },
   {
