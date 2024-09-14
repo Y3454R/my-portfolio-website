@@ -13,7 +13,7 @@ export default function Home() {
           className={styles.profilePic}
         />
       </div>
-      <h1 className={styles.title}>Welcome to My Website</h1>{" "}
+      <h1 className={styles.title}>I Wonder How, I Wonder Why! 🍋</h1>{" "}
       {/* Add class here */}
       <div className={styles.typingEffectWrapper}>
         <TypingEffect text="💻 এখানে CSE ইঞ্জিনিয়ার দ্বারা গান লোড করা হয় 🎵" />
