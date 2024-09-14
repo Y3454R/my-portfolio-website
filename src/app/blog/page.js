@@ -17,7 +17,7 @@ export default function Blog() {
         </li>
       </ul>
       <footer className={styles.footer}>
-        <p>© 2024 Your Name. All rights reserved.</p>
+        <p>© 2024 Samin Yeasar. All rights reserved.</p>
       </footer>
     </div>
   );
