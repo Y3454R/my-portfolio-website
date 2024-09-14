@@ -33,7 +33,7 @@
   margin-bottom: 1rem;
   padding: 0;
   position: relative;
-  height: 40px; /* Set a fixed height to prevent resizing */
+  height: 40px; /* Fixed height to prevent resizing */
 }
 
 .typingEffect {
@@ -42,6 +42,16 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  height: 100%;
+}
+
+/* Paragraph remains unchanged */
+.paragraph {
+  max-width: 400px; /* Restrict paragraph width for a column effect */
+  text-align: justify; /* Justify text */
+  line-height: 1.6; /* Improve readability */
+  margin-bottom: 1rem;
+  word-break: break-word; /* Ensure long words are broken up */
 }
 
 /* Media query for smaller screens */
@@ -52,13 +62,9 @@
     padding: 0.5rem 0;
     height: 40px; /* Maintain a fixed height */
   }
-}
 
-.paragraph {
-  max-width: 400px;
-  text-align: justify;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  /* Fix the paragraph's position */
-  word-break: break-word; /* Ensure long words are broken up */
+  .paragraph {
+    max-width: 90%; /* Ensure paragraphs are responsive */
+    text-align: justify;
+  }
 }
