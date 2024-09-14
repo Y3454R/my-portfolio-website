@@ -27,27 +27,38 @@
 }
 
 .typingEffectWrapper {
-  width: 100%; /* Default width */
-  max-width: 600px; /* No restriction for large screens */
-  text-align: left; /* Default alignment */
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
   margin-bottom: 1rem;
-  padding: 0; /* No extra padding on larger screens */
+  padding: 0;
+  position: relative;
+  height: 40px; /* Set a fixed height to prevent resizing */
+}
+
+.typingEffect {
+  position: absolute;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-  /* Apply when screen width is 768px or less */
   .typingEffectWrapper {
-    max-width: 300px; /* Restrict width on smaller screens */
-    text-align: justify; /* Justify text only for typing effect */
-    padding: 0.5rem 0; /* Add padding for visual consistency */
+    max-width: 300px;
+    text-align: justify;
+    padding: 0.5rem 0;
+    height: 40px; /* Maintain a fixed height */
   }
 }
 
-/* Paragraph remains unchanged */
 .paragraph {
-  max-width: 400px; /* Restrict paragraph width for a column effect */
-  text-align: justify; /* Justify text */
-  line-height: 1.6; /* Improve readability */
+  max-width: 400px;
+  text-align: justify;
+  line-height: 1.6;
   margin-bottom: 1rem;
+  /* Fix the paragraph's position */
+  word-break: break-word; /* Ensure long words are broken up */
 }

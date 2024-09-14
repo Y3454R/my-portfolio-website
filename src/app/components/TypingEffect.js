@@ -1,3 +1,5 @@
+/* src/app/compoenents/TypingEffect.js */
+
 "use client";
 import { useEffect, useState } from "react";
 import styles from "./typingEffect.module.css"; // Import the CSS module for styling

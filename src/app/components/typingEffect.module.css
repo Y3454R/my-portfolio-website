@@ -1,3 +1,5 @@
+/* src/app/components/typingEffect.module.css */
+
 .typingEffect {
   font-family: "JetBrains Mono", monospace;
   background: #1e1e1e; /* Dark background for terminal effect */
