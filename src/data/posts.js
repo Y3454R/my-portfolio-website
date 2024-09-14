@@ -11,7 +11,7 @@ export const posts = [
   },
   {
     id: 2,
-    title: "Another Interesting Topic",
+    title: "",
     slug: "another-interesting-topic",
     excerpt: "A brief overview of another interesting topic...",
     content: `
