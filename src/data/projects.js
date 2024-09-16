@@ -15,7 +15,7 @@ const projects = [
   {
     name: "🐯 Speech to Sign Language Translator Application",
     description: `An academic group project for CSE 3200: System Development Laboratory, in partnership with Ashikur Rahman. I believe the project's name is self-explanator. <a href="https://pypi.org/project/ASvid/"><b>ASvid</b>, a video utility ${spanHead}Python${spanTail} module, was built and released during this development process.</a> Now if you're from CSE,KUET can you guess the supervisor?`,
-    link: "https://github.com/Ashik-90/Speech-to-Sign-Language-Translator-Application",
+    link: "https://github.com/Y3454R/Speech-to-Sign-Language-Translator-Application",
   },
 ];
 
