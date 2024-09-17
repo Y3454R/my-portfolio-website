@@ -12,6 +12,23 @@ export default function Blog() {
         <li className={styles.post}>
           <h2>
             <a
+              href="https://emerald-draw-709.notion.site/I-ve-Blocked-Facebook-from-My-Computer-1044c95a0f5d8011a419fa1057817799?pvs=4"
+              target="blank"
+            >
+              💪 I've Blocked Facebook from My Computer!
+            </a>
+          </h2>
+          <p>
+            For the sake of increasing my productivity, I’ve blocked facebook
+            directly from my computer...
+          </p>
+        </li>
+      </ul>
+      <ul className={styles.posts}>
+        {/* Sample posts */}
+        <li className={styles.post}>
+          <h2>
+            <a
               href="https://emerald-draw-709.notion.site/1014c95a0f5d80f4bb80ee4640219336?pvs=4"
               target="blank"
             >
@@ -24,23 +41,7 @@ export default function Blog() {
           </p>
         </li>
       </ul>
-      <ul className={styles.posts}>
-        {/* Sample posts */}
-        <li className={styles.post}>
-          <h2>
-            <a
-              href="https://emerald-draw-709.notion.site/I-ve-Blocked-Facebook-from-My-Computer-1044c95a0f5d8011a419fa1057817799?pvs=4"
-              target="blank"
-            >
-              I've Blocked Facebook from My Computer!
-            </a>
-          </h2>
-          <p>
-            For the sake of increasing my productivity, I’ve blocked facebook
-            directly from my computer...
-          </p>
-        </li>
-      </ul>
+
       <footer className={styles.footer}>
         <p>© 2024 Samin Yeasar. All rights reserved.</p>
       </footer>
