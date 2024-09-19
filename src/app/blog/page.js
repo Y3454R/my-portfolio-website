@@ -12,6 +12,23 @@ export default function Blog() {
         <li className={styles.post}>
           <h2>
             <a
+              href="https://emerald-draw-709.notion.site/My-Lifestyle-Goals-403bf5bfa5084282828f1fdea64780de?pvs=4"
+              target="blank"
+            >
+              🌱 My Lifestyle Goals
+            </a>
+          </h2>
+          <p>
+            I believe that to upgrade one’s lifestyle, one must first upgrade
+            themselves.
+          </p>
+        </li>
+      </ul>
+      <ul className={styles.posts}>
+        {/* Sample posts */}
+        <li className={styles.post}>
+          <h2>
+            <a
               href="https://emerald-draw-709.notion.site/I-ve-Blocked-Facebook-from-My-Computer-1044c95a0f5d8011a419fa1057817799?pvs=4"
               target="blank"
             >
