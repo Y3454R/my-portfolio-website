@@ -29,6 +29,23 @@ export default function Blog() {
         <li className={styles.post}>
           <h2>
             <a
+              href="https://emerald-draw-709.notion.site/The-Heart-of-Ustad-Hotel-Discovering-Our-Why-1064c95a0f5d802eb698ed94334c591f?pvs=4"
+              target="blank"
+            >
+              🎞️ The Heart of Ustad Hotel: Discovering Our 'Why’
+            </a>
+          </h2>
+          <p>
+            This movie has changed my perspective on life. I learned a simple
+            yet valuable lesson...
+          </p>
+        </li>
+      </ul>
+      <ul className={styles.posts}>
+        {/* Sample posts */}
+        <li className={styles.post}>
+          <h2>
+            <a
               href="https://emerald-draw-709.notion.site/I-ve-Blocked-Facebook-from-My-Computer-1044c95a0f5d8011a419fa1057817799?pvs=4"
               target="blank"
             >
