@@ -3,6 +3,12 @@ const spanTail = `</span>`;
 
 const projects = [
   {
+    name: "🥥 OpenDub",
+    description: `OpenDub 🥥 is an open-source tool for generating translated dialogues from subtitles, while maintaining the original voice from the audio. Built with ${spanHead}Python${spanTail} and disparate libraries, it's designed to assist with dubbing workflows. Contributions are welcome.`,
+    link: "https://github.com/Y3454R/OpenDub",
+  },
+
+  {
     name: "🎨 YeasarVerse",
     description: `My personal website built with ${spanHead}Next.js${spanTail}. The styling is done with pure ${spanHead}CSS${spanTail} (stupidity, Ikr?). No, I'm not a hacker but I know that you're browsing it rn. 🧠`,
     link: "https://github.com/Y3454R/my-portfolio-website",
