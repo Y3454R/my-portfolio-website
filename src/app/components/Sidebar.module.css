@@ -1,0 +1,51 @@
+.sidebar {
+  background: #e6e6ff;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 1rem;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.sidebar nav ul li a.active {
+  color: #71b69c;
+  font-weight: bold;
+}
+
+.emoji {
+  font-size: 1.5rem;
+}
+
+.title {
+  font-size: 1.2rem;
+}

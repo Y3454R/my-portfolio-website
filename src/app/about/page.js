@@ -25,13 +25,6 @@ export default function About() {
     <section className={styles.aboutSection}>
       <h1 className={styles.title}>🧃 About Me 🌵</h1>
       <div className={styles.qaContainer}>
-        {/* <div className={styles.qaItem}>
-          <h3>👻</h3>
-          <p>
-            I’m a curious soul navigating the world of tech, still figuring out
-            my place here.
-          </p>
-        </div> */}
         <div className={styles.qaItem}>
           <h3>💼</h3>
           <p>
