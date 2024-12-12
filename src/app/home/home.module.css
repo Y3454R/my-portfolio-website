@@ -26,25 +26,6 @@
   font-size: 2rem;
 }
 
-.typingEffectWrapper {
-  width: 100%;
-  max-width: 600px;
-  text-align: left;
-  margin-bottom: 1rem;
-  padding: 0;
-  position: relative;
-  height: 40px; /* Fixed height to prevent resizing */
-}
-
-.typingEffect {
-  position: absolute;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 100%;
-}
-
 /* Paragraph remains unchanged */
 .paragraph {
   max-width: 400px; /* Restrict paragraph width for a column effect */

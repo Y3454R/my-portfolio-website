@@ -1,6 +1,6 @@
 /* src/app/home/page.js */
 "use client";
-import TypingEffect from "../components/TypingEffect";
+import NewsTicker from "../components/NewsTicker";
 import styles from "./home.module.css"; // Import specific styles
 
 export default function Home() {
@@ -14,9 +14,8 @@ export default function Home() {
         />
       </div>
       <h1 className={styles.title}>I Wonder How, I Wonder Why! 🍋</h1>{" "}
-      {/* Add class here */}
-      <div className={styles.typingEffectWrapper}>
-        <TypingEffect text="💻 এখানে CSE ইঞ্জিনিয়ার দ্বারা গান লোড করা হয় 🎵" />
+      <div className={styles.paragraph}>
+        <NewsTicker text="💻 এখানে CSE ইঞ্জিনিয়ার দ্বারা গান লোড করা হয় 🎵" />
       </div>
       <p className={styles.paragraph}>
         I am Samin Yeasar, a software engineer 💼 from 🇧🇩. I create 🐛 in

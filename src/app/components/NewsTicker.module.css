@@ -1,0 +1,24 @@
+.tickerContainer {
+  width: 100%; /* Full-width ticker */
+  overflow: hidden; /* Hide overflow content */
+  background-color: #222; /* Background for ticker */
+  color: #fff; /* Text color */
+  border: 1px solid #444; /* Optional border */
+  padding: 10px 0; /* Padding for better appearance */
+  position: relative; /* Ensure proper positioning */
+}
+
+.tickerContent {
+  display: inline-block; /* Ensures the content is displayed in a single line */
+  white-space: nowrap; /* Prevent wrapping */
+  animation: scrollTicker linear infinite; /* Continuous scrolling */
+}
+
+@keyframes scrollTicker {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End off-screen to the left */
+  }
+}
