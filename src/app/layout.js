@@ -1,8 +1,8 @@
 "use client";
 import "./globals.css";
 import Sidebar from "@/app/components/Sidebar"; // Import Sidebar component
+import TopNav from "@/app/components/TopNav"; // Import TopNav component
 import styles from "./layout.module.css"; // Import CSS for layout
-import TopNav from "./components/TopNav";
 
 export default function RootLayout({ children }) {
   return (
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
 
           {/* Wrapper Div */}
           <div className={styles.wrapper}>
-            <TopNav />
+            <TopNav /> {/* Add TopNav inside the wrapper */}
             <div className={styles.middleContent}>
               <Sidebar />
               <main className={styles.mainContent}>{children}</main>

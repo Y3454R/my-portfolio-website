@@ -23,37 +23,41 @@ const TopNav = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>Samin Yeasar</div>
+      <div className={styles.logo}>🐼 Samin Yeasar</div>
 
       <div className={styles.icons}>
         <a
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/in/samin-yeasar-abir/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaLinkedin size={24} />
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/Y3454R"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub size={24} />
         </a>
 
         <a
-          href="https://www.researchgate.net"
+          href="https://www.researchgate.net/profile/Samin-Yeasar-2"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaResearchgate size={24} />
         </a>
         <a
-          href="mailto:your.email@example.com"
+          href="mailto:syeasar.kuet@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaEnvelope size={24} />
         </a>
-        <button className={styles.themeToggle} onClick={toggleTheme}>
+        {/* <button className={styles.themeToggle} onClick={toggleTheme}>
           {darkMode ? <MdLightMode size={24} /> : <MdDarkMode size={24} />}
-        </button>
+        </button> */}
       </div>
     </nav>
   );

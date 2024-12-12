@@ -17,8 +17,10 @@
   grid-template-columns: 250px 1fr; /* Sidebar width + Main content */
   /* gap: 1rem; */
   background: #ffffff; /* Optional: Set a different background */
-  padding: 1rem; /* Add padding around the middle content */
-  border: 1px solid #ddd; /* Optional: Add a border to separate visually */
+  /* Add padding around the middle content */
+  /* padding: 1rem; */
+  /* Optional: Add a border to separate visually */
+  /* border: 1px solid #ddd; */
 }
 
 .mainContent {
@@ -34,7 +36,9 @@
   align-items: stretch; /* Stretch to fill the available width */
   background: #ffffff; /* Optional: Set background color */
   padding: 1rem; /* Optional: Add padding inside the wrapper */
-  border: 1px solid #ccc; /* Optional: Add a border for visual distinction */
-  border-radius: 5px; /* Optional: Add rounded corners */
+  /* Optional: Add a border for visual distinction */
+  /* border: 1px solid #ccc; */
+  /* Optional: Add rounded corners */
+  border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
