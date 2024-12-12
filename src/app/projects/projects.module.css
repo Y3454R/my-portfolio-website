@@ -44,28 +44,3 @@
 .projectName a:hover {
   text-decoration: underline;
 }
-
-/* Mobile responsive styles */
-@media (max-width: 768px) {
-  .projectsList {
-    padding: 1rem;
-  }
-
-  .title {
-    font-size: 1.8rem;
-  }
-
-  .projectItem {
-    margin-bottom: 1.5rem;
-  }
-
-  .projectItem h2 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .projectItem p {
-    font-size: 1rem;
-    text-align: justify;
-  }
-}

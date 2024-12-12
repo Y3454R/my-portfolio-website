@@ -53,18 +53,3 @@
   margin-bottom: 1rem;
   word-break: break-word; /* Ensure long words are broken up */
 }
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .typingEffectWrapper {
-    max-width: 300px;
-    text-align: justify;
-    padding: 0.5rem 0;
-    height: 40px; /* Maintain a fixed height */
-  }
-
-  .paragraph {
-    max-width: 90%; /* Ensure paragraphs are responsive */
-    text-align: justify;
-  }
-}

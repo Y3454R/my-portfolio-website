@@ -58,15 +58,6 @@ export default function RootLayout({ children }) {
                     <span className={styles.title}>Blog</span>
                   </a>
                 </li>
-                {/* <li>
-                  <a
-                    href="/error-log"
-                    className={pathname === "/error-log" ? styles.active : ""}
-                  >
-                    <span className={styles.emoji}>🐛</span>
-                    <span className={styles.title}>Bug Log</span>
-                  </a> 
-                </li> */}
               </ul>
             </nav>
           </aside>
