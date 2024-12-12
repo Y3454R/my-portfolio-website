@@ -1,7 +1,7 @@
 /* src/app/components/Sidebar.module.css */
 
 .sidebar {
-  background: #e6e6ff;
+  background: FFFDD0;
   padding: 1rem;
   border-right: 1px solid #ddd;
   position: sticky;
