@@ -1,3 +1,5 @@
+/* src/app/layout.css */
+
 .container {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.5fr; /* Three equal columns */
@@ -23,4 +25,16 @@
   padding: 1rem;
   background: #f5f5f5; /* Optional: Light background for main content */
   border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.wrapper {
+  display: flex; /* Flexbox to handle alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: flex-start; /* Align children at the top */
+  align-items: stretch; /* Stretch to fill the available width */
+  background: #ffffff; /* Optional: Set background color */
+  padding: 1rem; /* Optional: Add padding inside the wrapper */
+  border: 1px solid #ccc; /* Optional: Add a border for visual distinction */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }

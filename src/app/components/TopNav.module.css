@@ -1,0 +1,96 @@
+/* src/app/components/TopNav.module.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navLinks li {
+  padding: 0.5rem;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: #71b69c;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icons a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #71b69c;
+}
+
+.themeToggle {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.themeToggle:hover {
+  color: #71b69c;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .icons {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #121212;
+  color: #fff;
+}
+
+body.dark-theme .navbar {
+  background-color: #222;
+}

@@ -2,6 +2,7 @@
 import "./globals.css";
 import Sidebar from "@/app/components/Sidebar"; // Import Sidebar component
 import styles from "./layout.module.css"; // Import CSS for layout
+import TopNav from "./components/TopNav";
 
 export default function RootLayout({ children }) {
   return (
@@ -17,10 +18,13 @@ export default function RootLayout({ children }) {
           {/* Left Space */}
           <div className={styles.leftSpace}></div>
 
-          {/* Middle Area: Sidebar and Main */}
-          <div className={styles.middleContent}>
-            <Sidebar />
-            <main className={styles.mainContent}>{children}</main>
+          {/* Wrapper Div */}
+          <div className={styles.wrapper}>
+            <TopNav />
+            <div className={styles.middleContent}>
+              <Sidebar />
+              <main className={styles.mainContent}>{children}</main>
+            </div>
           </div>
 
           {/* Right Space */}
