@@ -1,11 +1,14 @@
+/* src/app/components/Sidebar.module.css */
+
 .sidebar {
   background: #e6e6ff;
   padding: 1rem;
   border-right: 1px solid #ddd;
   position: sticky;
   height: 100vh;
-  top: 0;
+  top: 4rem;
   overflow-y: auto;
+  height: calc(100vh - 4rem);
 }
 
 .sidebar h2 {
