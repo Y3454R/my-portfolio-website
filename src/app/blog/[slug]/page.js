@@ -1,4 +1,7 @@
+/* src/app/blog/[slug]/page.js */
+
 import { posts } from "@/data/posts";
+import styles from "./page.module.css";
 
 export default function BlogPost({ params }) {
   const { slug } = params;
@@ -9,9 +12,21 @@ export default function BlogPost({ params }) {
   }
 
   return (
-    <div>
-      <h1>{post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
-    </div>
+    <article className={styles.article}>
+      <header className={styles.header}>
+        <h1>{post.title}</h1>
+        <p className={styles.meta}>
+          {post.genre} | Published on {post.date} | Author: {post.author}
+        </p>
+        <img src={post.image} alt={post.title} className={styles.image} />
+      </header>
+      <section
+        className={styles.content}
+        dangerouslySetInnerHTML={{ __html: post.content }}
+      ></section>
+      <footer className={styles.footer}>
+        <p>Thank you for reading!</p>
+      </footer>
+    </article>
   );
 }
