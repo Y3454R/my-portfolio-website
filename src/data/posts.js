@@ -2,7 +2,7 @@ export const posts = [
   {
     slug: "bad-credit",
     title: "Bad Credit",
-    genre: "Science Fiction",
+    genre: "Science fiction",
     date: "December 14, 2024",
     author: "Samin Yeasar",
     image: "/blogs/bad_credit.jpeg",
