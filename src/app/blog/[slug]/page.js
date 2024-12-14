@@ -16,7 +16,7 @@ export default function BlogPost({ params }) {
       <header className={styles.header}>
         <h1>{post.title}</h1>
         <p className={styles.meta}>
-          {post.genre} | Published on {post.date} | Author: {post.author}
+          {post.genre} | {post.date} | {post.author}
         </p>
         <img src={post.image} alt={post.title} className={styles.image} />
       </header>
@@ -25,7 +25,7 @@ export default function BlogPost({ params }) {
         dangerouslySetInnerHTML={{ __html: post.content }}
       ></section>
       <footer className={styles.footer}>
-        <p>Thank you for reading!</p>
+        <p>Thank you for reading! 🍩</p>
       </footer>
     </article>
   );
