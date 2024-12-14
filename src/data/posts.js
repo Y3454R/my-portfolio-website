@@ -9,7 +9,7 @@ export const posts = [
     content: `
       <p><i>Scientists have found that trees communicate through a vast fungal network known as the "mycorrhizal network" or "wood wide web." These underground connections allow trees to exchange nutrients and chemical signals. For example, stressed trees can signal neighbors to boost defenses or share resources, showcasing the collaborative dynamics of forest ecosystems. This discovery, highlighted in research and discussions such as those by Suzanne Simard and others, has been explored in detail since the late 20th century and remains a growing field of study, with interviews like one from ETH Zurich in The Naked Scientists on June 18, 2024.</i></p>
 
-      <br>
+      <hr>
       
       <p>The sky was ablaze. Bright streaks of light tore through the heavens as missiles rose and fell, detonating in fiery bursts across continents. The air, thick with ash and radiation, smelled of doom. It felt like the end. Humanity had finally pushed itself to the brink.</p>
 
@@ -20,6 +20,8 @@ export const posts = [
       <p>He didn’t cry anymore. There was no point. Everyone he loved was already gone, and soon he would join them. The loneliness, the hunger, the pain of losing everyone — it would finally end.</p>
 
       <p>The boy watched as the sky darkened, and a distant rumble rolled toward him like thunder. The missile was closer now. He closed his eyes and let the wind brush against his skin. For the first time in a long while, he felt something close to peace. The end of the world would be his freedom from all the hurt.</p>
+      
+      <hr>
 
       <p>But little did he know — it was just a simulation. A simulation run to test how self-destructive humans could be; and he was just a program in that simulation.</p>
 
@@ -52,6 +54,8 @@ export const posts = [
       <p>Everyone was looking at the Grand Oak. The Grand Oak took a deep sigh, its branches drooping slightly. Then it said the words it had never wished to say: “Kill switch.”</p>
 
       <p>The Flytrap nodded, its jaws snapping shut in grim determination.</p>
+
+      <hr>
 
       <p>As human civilization crumbled into dust and the last vestiges of humanity faded into fleeting shadows in the ash, the trees stood in stillness, rooted to the Earth. Their dreams of the stars faded with the dying light, and they were left to wonder: had they been wrong to place their hopes in humanity? Or had they simply waited too long to act?</p>
     `,
