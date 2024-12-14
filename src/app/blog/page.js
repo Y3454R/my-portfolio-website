@@ -1,6 +1,11 @@
+import { posts } from "@/data/posts";
 import styles from "./page.module.css"; // Import blog page styles
 
 export default function Blog() {
+  function stripHtmlTags(html) {
+    return html.replace(/<[^>]+>/g, ""); // Removes HTML tags
+  }
+
   return (
     <div className={styles.page}>
       <header className={styles.header}>
@@ -9,21 +14,15 @@ export default function Blog() {
       </header>
 
       <ul className={styles.posts}>
-        {/* Sample posts */}
-        <li className={styles.post}>
-          <h2>
-            <a
-              href="https://emerald-draw-709.notion.site/The-Heart-of-Ustad-Hotel-Discovering-Our-Why-1064c95a0f5d802eb698ed94334c591f?pvs=4"
-              target="blank"
-            >
-              🎞️ The Heart of Ustad Hotel: Discovering Our 'Why’
-            </a>
-          </h2>
-          <p>
-            This movie has changed my perspective on life. I learned a simple
-            yet valuable lesson...
-          </p>
-        </li>
+        {posts.map((post) => (
+          <li key={post.slug} className={styles.post}>
+            <h2>
+              <a href={`/blog/${post.slug}`}>{post.title}</a>
+            </h2>
+            <p>{stripHtmlTags(post.content).substring(0, 100)}...</p>{" "}
+            {/* Display plain text */}
+          </li>
+        ))}
       </ul>
 
       <footer className={styles.footer}>

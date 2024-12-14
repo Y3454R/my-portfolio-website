@@ -1,0 +1,65 @@
+/* Newspaper-style layout */
+.article {
+  font-family: "Georgia", serif; /* Classic newspaper font */
+  line-height: 1.8;
+  color: #333;
+  background: #fff;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.image {
+  width: 100%; /* Make the image take up the full width of the container */
+  height: auto; /* Maintain aspect ratio for responsive resizing */
+  max-height: 400px; /* Limit the height to ensure it doesn't take up too much space */
+  object-fit: contain; /* Ensure the full image is visible without cropping */
+  border: 1px solid #ddd; /* Optional border for aesthetics */
+  margin: 1rem 0;
+  background-color: #f9f9f9; /* Add a subtle background to fill extra space */
+}
+
+.content {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.content p {
+  margin-bottom: 1.2rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  font-style: italic;
+  text-align: center;
+  color: #888;
+}
+
+/* Optional: Add drop caps for the first paragraph */
+.content p:first-of-type::first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+  float: left;
+  margin-right: 0.5rem;
+  line-height: 1;
+  color: #444;
+}
