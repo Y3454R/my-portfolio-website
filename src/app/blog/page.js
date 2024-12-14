@@ -19,8 +19,9 @@ export default function Blog() {
             <h2>
               <a href={`/blog/${post.slug}`}>{post.title}</a>
             </h2>
-            <p>{stripHtmlTags(post.content).substring(0, 100)}...</p>{" "}
-            {/* Display plain text */}
+            {/* <p>{stripHtmlTags(post.content).substring(0, 100)}...</p>{" "} */}
+            <p>{post.genre}</p>
+            <hr></hr>
           </li>
         ))}
       </ul>
