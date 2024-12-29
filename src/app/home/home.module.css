@@ -5,6 +5,8 @@
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .profileContainer {
@@ -24,13 +26,19 @@
 .title {
   margin-bottom: 1rem;
   font-size: 2rem;
+  text-align: center;
 }
 
-/* Paragraph remains unchanged */
-.paragraph {
-  max-width: 400px; /* Restrict paragraph width for a column effect */
-  text-align: justify; /* Justify text */
-  line-height: 1.6; /* Improve readability */
+.tickerWrapper {
+  width: 100%;
+  max-width: 400px;
   margin-bottom: 1rem;
-  word-break: break-word; /* Ensure long words are broken up */
+}
+
+.paragraph {
+  max-width: 400px;
+  text-align: justify;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  word-break: break-word;
 }
