@@ -23,7 +23,7 @@ const TopNav = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>🎄 Samin Yeasar</div>
+      <div className={styles.logo}>🐻‍❄️ Samin Yeasar</div>
 
       <div className={styles.icons}>
         <a
