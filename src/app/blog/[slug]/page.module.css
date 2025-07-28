@@ -47,6 +47,60 @@
   margin-bottom: 1.2rem;
 }
 
+/* Code styling */
+.content code {
+  background-color: #f4f4f4;
+  color: #e83e8c;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  border: 1px solid #ddd;
+}
+
+.content pre {
+  background-color: #2d3748;
+  color: #e2e8f0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 1px solid #4a5568;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  border: none;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+/* Syntax highlighting for common programming elements */
+.content pre code .keyword {
+  color: #ff79c6;
+  font-weight: bold;
+}
+
+.content pre code .string {
+  color: #f1fa8c;
+}
+
+.content pre code .comment {
+  color: #6272a4;
+  font-style: italic;
+}
+
+.content pre code .function {
+  color: #50fa7b;
+}
+
+.content pre code .number {
+  color: #bd93f9;
+}
+
 .footer {
   margin-top: 2rem;
   font-style: italic;

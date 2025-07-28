@@ -1,5 +1,31 @@
 export const posts = [
   {
+    slug: "password-toggle-button-bug",
+    title: "Why My Password Toggle Button Didn't Work on First Click!",
+    genre: "Programming",
+    date: "July 29, 2025",
+    author: "Samin Yeasar",
+    image: "/blogs/password_toggle.jpg",
+    content: `
+      <p>I recently ran into a weird bug while building a form with React and Formik. I had a simple password visibility toggle button with an eye icon. Everything seemed fine — state updates worked, and the click event handler was properly set up and ready to run. Yet, despite this, the button didn't respond on the first click after a page reload, which was unexpected.</p>
+
+      <p>After some debugging (obviously brainstorming with ChatGPT and cursor), I realized the issue wasn't with the logic — it was with the icon. The SVG rendered by the icon library was intercepting the click. So even though I was clicking the button visually, the actual event was being captured by the SVG element inside it.</p>
+
+      <p>The solution was to add <i><code>pointer-events: none</code></i> to the icon itself.</p>
+
+      <pre><code>&lt;Icon
+  nameIcon={showPassword ? "BiShow" : "BiHide"}
+  propsIcon={{ size: 20, style: { pointerEvents: "none" } }}
+/&gt;</code></pre>
+
+      <p>By setting <code>pointer-events: none</code> (or <code>pointerEvents: "none"</code> in React inline styles) on the SVG icon, we tell the browser to ignore any mouse interactions on that element. This means that when the user clicks on the icon, the click isn't intercepted by the SVG itself but instead passes through to the underlying button element. As a result, the button receives the click event as intended, triggering the toggle function immediately—even on the very first click after the page loads.</p>
+
+      <p>This is a common issue when working with icon libraries in React, especially when the icons are SVG-based. The SVG elements can sometimes capture mouse events that should be handled by their parent elements. The <code>pointer-events: none</code> CSS property is a clean solution that ensures the icon is purely visual and doesn't interfere with the interactive behavior of its container.</p>
+
+      <p>So next time you're debugging a button that seems unresponsive on the first click, check if there are any child elements (like SVG icons) that might be intercepting the click events!</p>
+    `,
+  },
+  {
     slug: "bad-credit",
     title: "Bad Credit",
     genre: "Science fiction",
