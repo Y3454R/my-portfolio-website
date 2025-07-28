@@ -12,7 +12,7 @@
 
 .footer {
   display: none;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
   background-color: #333;
@@ -37,15 +37,93 @@
 
 .menu li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
+  transition: color 0.3s ease;
+  position: relative;
+  display: block;
+}
+
+.menu li a:hover {
+  color: #71b69c;
+}
+
+.menu li a.active {
+  color: #fff;
+}
+
+.menu li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background-color: #a592d3;
+  border-radius: 2px;
 }
 
 .emoji {
   font-size: 1.5rem; /* Adjust the emoji size */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .footer {
     display: flex;
+    padding: 0.75rem 1rem;
+  }
+
+  .menu li {
+    margin: 0 8px;
+  }
+
+  .emoji {
+    font-size: 2.2rem;
+  }
+
+  .menu li a.active::after {
+    bottom: -6px;
+    width: 35px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem 1rem;
+  }
+
+  .menu li {
+    margin: 0 10px;
+  }
+
+  .emoji {
+    font-size: 2.5rem;
+  }
+
+  .menu li a.active::after {
+    bottom: -8px;
+    width: 40px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.25rem;
+  }
+
+  .menu li {
+    margin: 0 8px;
+  }
+
+  .emoji {
+    font-size: 2.8rem;
+  }
+
+  .menu li a.active::after {
+    bottom: -10px;
+    width: 45px;
+    height: 5px;
   }
 }

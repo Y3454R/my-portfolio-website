@@ -42,3 +42,43 @@
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
 }
+
+/* Mobile responsive styles */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr; /* Single column on tablets */
+    gap: 0.5rem;
+  }
+
+  .leftSpace,
+  .rightSpace {
+    display: none; /* Hide side spaces on mobile */
+  }
+
+  .middleContent {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .wrapper {
+    padding: 0.5rem;
+  }
+
+  .mainContent {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 0;
+  }
+
+  .wrapper {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .mainContent {
+    border-radius: 0;
+  }
+}

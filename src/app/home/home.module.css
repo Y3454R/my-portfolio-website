@@ -42,3 +42,76 @@
   margin-bottom: 1rem;
   word-break: break-word;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 1024px) {
+  .homepage {
+    padding: 1.5rem;
+  }
+
+  .profilePic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .paragraph {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage {
+    padding: 1rem;
+  }
+
+  .profileContainer {
+    margin-bottom: 1.5rem;
+  }
+
+  .profilePic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tickerWrapper {
+    max-width: 300px;
+  }
+
+  .paragraph {
+    max-width: 300px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage {
+    padding: 0.75rem;
+  }
+
+  .profilePic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .tickerWrapper {
+    max-width: 250px;
+  }
+
+  .paragraph {
+    max-width: 250px;
+    font-size: 0.85rem;
+  }
+}

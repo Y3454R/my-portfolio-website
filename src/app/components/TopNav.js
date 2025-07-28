@@ -5,7 +5,6 @@ import { useState } from "react";
 import {
   FaLinkedin,
   FaGithub,
-  FaCodeforces,
   FaResearchgate,
   FaEnvelope,
 } from "react-icons/fa";
@@ -23,7 +22,7 @@ const TopNav = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>🐻‍❄️ Samin Yeasar</div>
+      <div className={styles.logo}>🍔 Samin Yeasar</div>
 
       <div className={styles.icons}>
         <a
