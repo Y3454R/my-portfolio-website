@@ -17,6 +17,8 @@ import {
   SiGit,
   SiNextdotjs,
   SiPostgresql,
+  SiDocker,
+  SiPytorch,
 } from "react-icons/si"; // Specific icons
 import { GrCode } from "react-icons/gr"; // General code icon for LeetCode
 
@@ -28,11 +30,16 @@ export default function About() {
         <div className={styles.qaItem}>
           <h3>💼</h3>
           <p>
-            Currently, I work as a Junior Software Engineer at{" "}
-            <a href="https://www.codemarshal.com/" target="blank">
+            Currently, I work as a Software Engineer at{" "}
+            <a
+              href="https://www.codemarshal.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               CodeMarshal IT Systems
             </a>
-            , focusing mostly on JavaScript technologies since February 2024.
+            , focusing mostly on Web technologies, OCR and Computer Vision since
+            February 2024.
           </p>
         </div>
         <div className={styles.qaItem}>
@@ -55,17 +62,23 @@ export default function About() {
             </b>
           </p>
           <p>
-            Frontend:{" "}
-            <b>
-              <FaReact style={{ color: "#61DBFB" }} /> React.js{" "}
-              <SiNextdotjs style={{ color: "#000000" }} /> Next.js{" "}
-            </b>
-          </p>
-          <p>
             Backend:{" "}
             <b>
               <FaNodeJs style={{ color: "#68A063" }} /> Node.js{" "}
               <SiExpress style={{ color: "#000000" }} /> Express.js{" "}
+            </b>
+          </p>
+          <p>
+            AI:{" "}
+            <b>
+              <SiPytorch style={{ color: "#EE4C2C" }} /> PyTorch
+            </b>
+          </p>
+          <p>
+            Frontend:{" "}
+            <b>
+              <FaReact style={{ color: "#61DBFB" }} /> React.js{" "}
+              <SiNextdotjs style={{ color: "#000000" }} /> Next.js{" "}
             </b>
           </p>
           <p>
@@ -83,7 +96,8 @@ export default function About() {
           <p>
             Tools:{" "}
             <b>
-              <SiGit style={{ color: "#F05033" }} /> Git
+              <SiGit style={{ color: "#F05033" }} /> Git{" "}
+              <SiDocker style={{ color: "#2496ED" }} /> Docker{" "}
             </b>
           </p>
         </div>
