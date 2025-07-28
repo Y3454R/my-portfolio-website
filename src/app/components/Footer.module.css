@@ -14,7 +14,7 @@
   display: none;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: #333;
   color: #fff;
   position: sticky;
@@ -54,23 +54,23 @@
 .menu li a.active::after {
   content: "";
   position: absolute;
-  bottom: -8px;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
-  width: 30px;
-  height: 3px;
+  width: 20px;
+  height: 2px;
   background-color: #a592d3;
   border-radius: 2px;
 }
 
 .emoji {
-  font-size: 1.5rem; /* Adjust the emoji size */
+  font-size: 1rem; /* Reduced from 1.2rem */
 }
 
 @media (max-width: 1024px) {
   .footer {
     display: flex;
-    padding: 0.75rem 1rem;
+    padding: 0.4rem 1rem;
   }
 
   .menu li {
@@ -78,19 +78,19 @@
   }
 
   .emoji {
-    font-size: 2.2rem;
+    font-size: 1.5rem; /* Reduced from 1.8rem */
   }
 
   .menu li a.active::after {
-    bottom: -6px;
-    width: 35px;
-    height: 4px;
+    bottom: -4px;
+    width: 25px;
+    height: 2px;
   }
 }
 
 @media (max-width: 768px) {
   .footer {
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .menu li {
@@ -98,19 +98,19 @@
   }
 
   .emoji {
-    font-size: 2.5rem;
+    font-size: 1.8rem; /* Reduced from 2rem */
   }
 
   .menu li a.active::after {
-    bottom: -8px;
-    width: 40px;
-    height: 4px;
+    bottom: -5px;
+    width: 30px;
+    height: 3px;
   }
 }
 
 @media (max-width: 480px) {
   .footer {
-    padding: 1.25rem;
+    padding: 0.75rem;
   }
 
   .menu li {
@@ -118,12 +118,12 @@
   }
 
   .emoji {
-    font-size: 2.8rem;
+    font-size: 2rem; /* Reduced from 2.2rem */
   }
 
   .menu li a.active::after {
-    bottom: -10px;
-    width: 45px;
-    height: 5px;
+    bottom: -6px;
+    width: 35px;
+    height: 3px;
   }
 }
