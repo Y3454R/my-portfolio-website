@@ -19,18 +19,20 @@ export default function Home() {
       </div>
       <p className={styles.paragraph}>SWE 💻 | Bibliophile 📚 | Weeb ◕⩊◕</p>
       <p className={styles.paragraph}>
-        I am Samin Yeasar, a software engineer 💼 from 🇧🇩. I create 🐛 in
-        JavaScript, try to make 🤖 learn cringe things (for now) in Python, and
-        ❌ fail test cases in C++.
+        I’m Samin Yeasar, a software engineer 💼 from 🇧🇩. I create 🐛 in code,
+        try to make 💻 smarter while staying dumb myself, and face ❌ on
+        LeetCode now and then.
       </p>
       <p className={styles.paragraph}>
         {" "}
-        I love to read 📚, watch anime 🎬, and engage in what I call
-        'shit-coding' 💩.
+        <p className={styles.paragraph}>
+          In my free time, I love to read 📚, watch anime 🎬, and engage in what
+          I call '💩-coding' — usually fueled by ☕ or 🍫.
+        </p>
       </p>
       <p className={styles.paragraph}>
-        I can relate to Kafka's <em>Metamorphosis</em>—to know how, you can mail
-        me 📧: syeasar.kuet@gmail.com.
+        I can relate to Kafka's <em>Metamorphosis</em> — to know how, you can
+        mail me 📧: syeasar.kuet@gmail.com.
       </p>
     </div>
   );
