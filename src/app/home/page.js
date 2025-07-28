@@ -17,6 +17,7 @@ export default function Home() {
       <div className={styles.paragraph}>
         <NewsTicker text="💻 এখানে CSE ইঞ্জিনিয়ার দ্বারা গান লোড করা হয় 🎵" />
       </div>
+      <p className={styles.paragraph}>SWE 💻 | Bibliophile 📚 | Weeb ◕⩊◕</p>
       <p className={styles.paragraph}>
         I am Samin Yeasar, a software engineer 💼 from 🇧🇩. I create 🐛 in
         JavaScript, try to make 🤖 learn cringe things (for now) in Python, and

@@ -1,7 +1,7 @@
 /* src/app/blog/page.module.css */
 
 .page {
-  padding: 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -9,6 +9,7 @@
 .header {
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 0.5rem;
 }
 
 .header h1 {
