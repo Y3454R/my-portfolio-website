@@ -56,6 +56,8 @@
   font-family: "Courier New", monospace;
   font-size: 0.9em;
   border: 1px solid #ddd;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .content pre {
@@ -67,6 +69,9 @@
   margin: 1.5rem 0;
   border: 1px solid #4a5568;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 .content pre code {
@@ -76,6 +81,9 @@
   border: none;
   font-size: 0.95em;
   line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 /* Syntax highlighting for common programming elements */
@@ -116,4 +124,54 @@
   margin-right: 0.5rem;
   line-height: 1;
   color: #444;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .article {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+
+  .content pre {
+    padding: 1rem;
+    font-size: 0.85em;
+    margin: 1rem 0;
+  }
+
+  .content pre code {
+    font-size: 0.85em;
+  }
+
+  .content code {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .article {
+    margin: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .content pre {
+    padding: 0.75rem;
+    font-size: 0.8em;
+  }
+
+  .content pre code {
+    font-size: 0.8em;
+  }
 }
