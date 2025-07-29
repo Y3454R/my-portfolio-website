@@ -25,7 +25,7 @@ import { GrCode } from "react-icons/gr"; // General code icon for LeetCode
 export default function About() {
   return (
     <section className={styles.aboutSection}>
-      <h1 className={styles.title}>🧃 About Me 🌵</h1>
+      <h1 className={styles.title}>✏️ README.md</h1>
       <div className={styles.qaContainer}>
         <div className={styles.qaItem}>
           <h3>💼</h3>
