@@ -4,13 +4,13 @@ const spanTail = `</span>`;
 const projects = [
   {
     name: "🥥 OpenDub",
-    description: `OpenDub 🥥 is an open-source tool for generating translated dialogues from subtitles, while maintaining the original voice from the audio. Built with ${spanHead}Python${spanTail} and disparate libraries, it's designed to assist with dubbing workflows. Contributions are welcome.`,
+    description: `OpenDub 🥥 is an open-source pipeline for generating translated dialogues from subtitles, while maintaining the original voice from the audio. Built with ${spanHead}Python${spanTail} and disparate libraries, it's designed to assist with dubbing workflows.`,
     link: "https://github.com/Y3454R/OpenDub",
   },
 
   {
     name: "🎨 YeasarVerse",
-    description: `My personal website built with ${spanHead}Next.js${spanTail}. The styling is done with pure ${spanHead}CSS${spanTail} (stupidity, Ikr?). No, I'm not a hacker but I know that you're browsing it rn. 🧠`,
+    description: `My personal website built with ${spanHead}Next.js${spanTail}. The styling is done with pure ${spanHead}CSS${spanTail} (stupidity, Ikr?).`,
     link: "https://github.com/Y3454R/my-portfolio-website",
   },
   {
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     name: "🐯 Speech to Sign Language Translator Application",
-    description: `An academic group project for CSE 3200: System Development Laboratory, in partnership with Ashikur Rahman. I believe the project's name is self-explanator. <a href="https://pypi.org/project/ASvid/"><b>ASvid</b>, a video utility ${spanHead}Python${spanTail} module, was built and released during this development process.</a> Now if you're from CSE,KUET can you guess the supervisor?`,
+    description: `An academic group project for CSE 3200: System Development Laboratory, in partnership with <a href="https://www.linkedin.com/in/ashikur-rahman-kuet/">Ashikur Rahman</a>. I believe the project's name is self-explanator. <a href="https://pypi.org/project/ASvid/"><b>ASvid</b>, a video utility ${spanHead}Python${spanTail} module, was built and released during this development process.</a>`,
     link: "https://github.com/Y3454R/Speech-to-Sign-Language-Translator-Application",
   },
 ];
