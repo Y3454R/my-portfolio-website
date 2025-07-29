@@ -22,6 +22,7 @@ export const posts = [
 
       <p>By setting <code>pointer-events: none</code> (or <code>pointerEvents: "none"</code> in React inline styles) on the SVG icon, we tell the browser to ignore any mouse interactions on that element. This means that when the user clicks on the icon, the click isn't intercepted by the SVG itself but instead passes through to the underlying button element. As a result, the button receives the click event as intended, triggering the toggle function immediately—even on the very first click after the page loads.</p>
 
+      <p>While it’s possible to make the SVG itself handle clicks, it’s better to keep the button as the interactive element for accessibility, consistent styling, and easier event management. Buttons come with built-in keyboard support and semantics that SVGs lack by default. Making the SVG clickable would require extra work to replicate these features and could lead to a smaller, less user-friendly click area. Disabling pointer events on the SVG lets the button handle all interactions cleanly while keeping the icon purely visual.</p>
 
     `,
   },
