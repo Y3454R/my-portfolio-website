@@ -14,7 +14,7 @@ const projects = [
     link: "https://github.com/Y3454R/my-portfolio-website",
   },
   {
-    name: "🍔 FoodBuzz",
+    name: "🍕 FoodBuzz",
     description: `A food themed social website built with ${spanHead}HTML${spanTail}, ${spanHead}CSS${spanTail}, ${spanHead}JS${spanTail} and ${spanHead}PHP${spanTail}. A basic CRUD web application as an academic project (CSE 3100 sessional course). Users can write, view, edit and delete a review.`,
     link: "https://github.com/Y3454R/Foodbuzz",
   },
