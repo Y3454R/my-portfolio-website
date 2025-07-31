@@ -10,6 +10,7 @@ import {
   FaGithub,
   FaGoodreads,
   FaEnvelope,
+  FaSwift,
 } from "react-icons/fa"; // React Icons
 import {
   SiCplusplus,
@@ -20,7 +21,6 @@ import {
   SiDocker,
   SiPytorch,
 } from "react-icons/si"; // Specific icons
-import { GrCode } from "react-icons/gr"; // General code icon for LeetCode
 
 export default function About() {
   return (
@@ -59,6 +59,7 @@ export default function About() {
               <SiCplusplus style={{ color: "#00599C" }} /> C++{" "}
               <FaPython style={{ color: "#FFD43B" }} /> Python{" "}
               <FaJs style={{ color: "#F0DB4F" }} /> JavaScript{" "}
+              <FaSwift style={{ color: "#FFAC45" }} /> Swift{" "}
             </b>
           </p>
           <p>
@@ -66,12 +67,6 @@ export default function About() {
             <b>
               <FaNodeJs style={{ color: "#68A063" }} /> Node.js{" "}
               <SiExpress style={{ color: "#000000" }} /> Express.js{" "}
-            </b>
-          </p>
-          <p>
-            AI:{" "}
-            <b>
-              <SiPytorch style={{ color: "#EE4C2C" }} /> PyTorch
             </b>
           </p>
           <p>
@@ -85,6 +80,12 @@ export default function About() {
             Mobile Application:{" "}
             <b>
               <FaReact style={{ color: "#61DBFB" }} /> React Native{" "}
+            </b>
+          </p>
+          <p>
+            AI:{" "}
+            <b>
+              <SiPytorch style={{ color: "#EE4C2C" }} /> PyTorch
             </b>
           </p>
           <p>
