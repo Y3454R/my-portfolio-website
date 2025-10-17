@@ -3,6 +3,11 @@ const spanTail = `</span>`;
 
 const projects = [
   {
+    name: "📚 WordWalk",
+    description: `Vibe coded a simple audiobook-style vocabulary app built with ${spanHead}Next.js${spanTail}. It lets its only user (me) listen to words, synonyms, and example sentences while doing random chores.`,
+    link: "https://github.com/Y3454R/wordwalk",
+  },
+  {
     name: "🥥 OpenDub",
     description: `OpenDub 🥥 is an open-source pipeline for generating translated dialogues from subtitles, while maintaining the original voice from the audio. Built with ${spanHead}Python${spanTail} and disparate libraries, it's designed to assist with dubbing workflows.`,
     link: "https://github.com/Y3454R/OpenDub",
