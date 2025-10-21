@@ -19,18 +19,35 @@ export default function Home() {
       </div>
       <p className={styles.paragraph}>SWE 💻 | Bibliophile 📚 | Weeb ◕⩊◕</p>
       <p className={styles.paragraph}>
-        I’m Samin Yeasar, a software engineer from 🇧🇩. I create 🐛 in code, try
-        to make 💻 smarter while staying dumb myself, and face ❌ on LeetCode
-        now and then.
+        I am a software engineer. I love to read books (mostly fiction) and
+        watch anime.
       </p>
       <p className={styles.paragraph}>
-        In my free time, I love to read 📚, watch anime 🎬, and engage in what I
-        call '💩-coding' — powered by ☕ or 🍫.
+        I used to cherish the ocean (I hope, the sea and ocean mean the same
+        thing) a lot. But now I have realized that it’s just a shitload of H
+        <sub>2</sub>O.
       </p>
       <p className={styles.paragraph}>
-        I can relate to Kafka's <em>Metamorphosis</em> — to know how, you can
-        mail me 📧: syeasar.kuet@gmail.com.
+        Nowadays I always wonder what intelligence is. How can a dumb (e.g. me)
+        become intelligent, how can someone grow some common sense? Is it a
+        process or what? A journey? A journey by what? Should I ask chatgpt? Is
+        it intelligent?
       </p>
+      <blockquote className={styles.paragraph}>
+        So give me coffee and TV, easily
+        <br />
+        I've seen so much, I'm going blind
+        <br />
+        And I'm brain-dead virtually
+        <br />
+        Sociability is hard enough for me
+        <br />
+        Take me away from this big bad world
+        <br /> ~{" "}
+        <a target="_blank" href="https://youtu.be/6oqXVx3sBOk">
+          Blur
+        </a>
+      </blockquote>
     </div>
   );
 }
