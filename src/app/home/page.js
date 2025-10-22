@@ -23,7 +23,7 @@ export default function Home() {
         watch anime.
       </p>
       <p className={styles.paragraph}>
-        I love to know about computers and what they can do
+        I want to know about computers.
       </p>
       {/* <blockquote className={styles.paragraph}>
         So give me coffee and TV, easily
