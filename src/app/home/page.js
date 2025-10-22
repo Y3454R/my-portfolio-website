@@ -23,17 +23,9 @@ export default function Home() {
         watch anime.
       </p>
       <p className={styles.paragraph}>
-        I used to cherish the ocean (I hope, the sea and ocean mean the same
-        thing) a lot. But now I have realized that it’s just a shitload of H
-        <sub>2</sub>O.
+        I love to know about computers and what they can do
       </p>
-      <p className={styles.paragraph}>
-        Nowadays I always wonder what intelligence is. How can a dumb (e.g. me)
-        become intelligent, how can someone grow some common sense? Is it a
-        process or what? A journey? A journey by what? Should I ask chatgpt? Is
-        it intelligent?
-      </p>
-      <blockquote className={styles.paragraph}>
+      {/* <blockquote className={styles.paragraph}>
         So give me coffee and TV, easily
         <br />
         I've seen so much, I'm going blind
@@ -47,7 +39,7 @@ export default function Home() {
         <a target="_blank" href="https://youtu.be/6oqXVx3sBOk">
           Blur
         </a>
-      </blockquote>
+      </blockquote> */}
     </div>
   );
 }
