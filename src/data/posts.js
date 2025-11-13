@@ -1,5 +1,37 @@
 export const posts = [
   {
+    slug: "fluent-python-frenchdeck",
+    title: "Flipping Through Fluent Python: The First Example ",
+    genre: "Programming",
+    date: "November 13, 2025",
+    author: "Samin Yeasar",
+    image: "/blogs/fluent_python_1.png",
+    content: `
+    <p>Today, in a fine November afternoon, I was flipping through the book — <a href="https://www.goodreads.com/book/show/22800567-fluent-python" target="_blank"><em>Fluent Python</em></a>. Though I should not say "flipping," because I stumbled upon the very first example.</p>
+
+    <pre><code>import collections
+Card = collections.namedtuple('Card', ['rank', 'suit'])</code></pre>
+
+    <p>I was wondering — wtf is this <code>Card</code> doing? Is this creating a class? Or an object? Or what?</p>
+
+    <p>Turned out, <code>namedtuple</code> is a <strong>factory function</strong>. "Factory function" was a new (still fresh) term to me. It sounded fancy, but I interpreted it like this: it’s a function that makes a class for me. So <code>Card</code> is now a class, and when I do <code>Card('A', 'spades')</code>, I get an instance of it. Each card is immutable, lightweight (compared to a full custom class, <code>namedtuple</code> creates a very small, memory-efficient object; it doesn’t have a <code>__dict__</code> for storing attributes dynamically, which saves memory and is faster to create), and has fields accessible by name, which improves readability and reduces errors. For example, <code>c.rank</code> and <code>c.suit</code> clearly indicate what data they hold, enhancing clarity and maintainability.</p>
+
+    <p>Reviewed the underscore conventions, just a footnote — a <strong>single leading underscore (<code>_attr</code>) signals internal use</strong>, a <strong>double leading underscore (<code>__attr</code>) triggers name mangling to avoid subclass conflicts</strong>, and a <strong>trailing underscore (<code>attr_</code>) is used to avoid naming conflicts with Python keywords</strong>. <code>_cards</code> follows the first convention: it holds all the card objects, but the class doesn't expose the list directly, instead providing a controlled interface through Python's special methods.</p>
+
+    <p>By implementing <code>__len__</code> and <code>__getitem__</code>, the deck behaves like a standard Python sequence (i.e., an object that supports indexing, slicing, iteration, and <code>len()</code> just like a list, tuple, or string):</p>
+
+    <pre><code>def __len__(self):
+    return len(self._cards)
+
+def __getitem__(self, position):
+    return self._cards[position]</code></pre>
+
+    <p><code>__len__</code> allows <code>len(deck)</code> to return the number of cards. <code>__getitem__</code> allows indexing and slicing: <code>deck[0]</code> returns the first card, <code>deck[:3]</code> returns the top three, and <code>deck[12::13]</code> selects all the aces. Because <code>_cards</code> is a list, these operations are handled automatically, and the deck also becomes iterable. I can loop over it, pass it to <code>random.choice</code>, or slice it any way I like — all without writing extra code.</p>
+
+    <p>The combination of <code>namedtuple</code> for cards and the sequence protocol for the deck shows the coolness of Python's data model: minimal, clear, and fully integrated with built-in operations.</p>
+  `,
+  },
+  {
     slug: "password-toggle-button-bug",
     title: "Why My Password Toggle Button Didn't Work on First Click!",
     genre: "Programming",
