@@ -18,7 +18,9 @@ export default function BlogPost({ params }) {
         <p className={styles.meta}>
           {post.genre} | {post.date} | {post.author}
         </p>
-        <img src={post.image} alt={post.title} className={styles.image} />
+        {post.image && (
+          <img src={post.image} alt={post.title} className={styles.image} />
+        )}
       </header>
       <section
         className={styles.content}

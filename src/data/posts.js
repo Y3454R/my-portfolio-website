@@ -5,7 +5,7 @@ export const posts = [
     genre: "Programming",
     date: "November 15, 2025",
     author: "Samin Yeasar",
-    image: "/blogs/python_len.png",
+    image: null,
     content: `
       <p>In Python, we get the size of a built-in object using <code>len(x)</code>, not <code>x.len()</code>. This is a deliberate choice in CPython, the reference Python implementation. It balances speed and language consistency. </p>
       <h3>Fast-Path Optimization in CPython</h3>
@@ -26,26 +26,6 @@ export const posts = [
   
       <h3>Data Model Consistency</h3>
       <p><code>len()</code> is part of Python’s data model, like <code>abs()</code>, <code>iter()</code>, and <code>repr()</code>. Keeping it as a function gives a uniform interface. It lets CPython optimize built-ins. It keeps Python clean and predictable. This follows <a href="https://www.python.org/doc/humor/#the-zen-of-python" target="_blank">The Zen of Python</a>: <i>“Practicality beats purity”</i> and <i>“Special cases aren’t special enough to break the rules.”</i> Built-ins get a fast path under the hood, but the API stays consistent for all objects.</p>
-  
-      <h3>How <code>len()</code> Works Visually</h3>
-      <pre><code>
-                     🟢 len(x)
-                       │
-            ┌──────────┴──────────┐
-            │                     │
-    🏛 Built-in Type           🛠 User-defined
-    (list, str, tuple, ...)    (custom class)
-            │                     │
-     ⚡ Fast C Shortcut        🔍 Python Method Lookup
-     ┌────────────────┐       ┌───────────────────┐
-     │ Read ob_size   │       │ Find __len__()    │
-     │ from PyVarObj  │       │ Call Python method│
-     └────────────────┘       └───────────────────┘
-            │                     │
-            ▼                     ▼
-     ✅ Return length          ✅ Return length
-  (single memory read)    (normal Python call)
-      </code></pre>
   
       <p>For built-in objects, <code>len()</code> directly reads <code>ob_size</code>. For user-defined objects, Python calls <code>__len__()</code>. Both return the length, but built-ins are much faster.</p>
       <p style="font-size:0.9em; color:#555; margin-top:2em;"><i>Source: Ramalho, L. <em>Fluent Python: Clear, Concise, and Effective Programming</em>. <a href="https://www.goodreads.com/book/show/22800567-fluent-python" target="_blank">Goodreads</a>, 2015.</i></p>
