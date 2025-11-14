@@ -1,5 +1,58 @@
 export const posts = [
   {
+    slug: "python-len-function-explained",
+    title: "A Short Lane to len() in Python",
+    genre: "Programming",
+    date: "November 15, 2025",
+    author: "Samin Yeasar",
+    image: "/blogs/python_len.png",
+    content: `
+      <p>In Python, we get the size of a built-in object using <code>len(x)</code>, not <code>x.len()</code>. This is a deliberate choice in CPython, the reference Python implementation. It balances speed and language consistency. </p>
+      <h3>Fast-Path Optimization in CPython</h3>
+      <p>For built-in types like <code>list</code>, <code>str</code>, <code>tuple</code>, <code>bytes</code>, and <code>memoryview</code>, calling <code>len()</code> does not invoke a Python method. CPython uses a C-level shortcut. All variable-sized built-ins use a C struct called <code>PyVarObject</code>. This struct has a field called <code>ob_size</code> that stores the number of elements. When we call <code>len(x)</code> on a built-in, CPython just reads <code>ob_size</code>. It does not look up a method or run Python bytecode. This makes <code>len()</code> very fast, which is important because we often check lengths in Python programs.</p>
+  
+      <h3>PyVarObject and ob_size</h3>
+      <p>Many built-in objects use the <code>PyVarObject</code> struct:</p>
+  
+      <pre><code>typedef struct {
+      PyObject ob_base;
+      Py_ssize_t ob_size;  // number of elements
+  } PyVarObject;</code></pre>
+  
+      <p>The <code>ob_size</code> field holds the length of the object. For built-ins, <code>len(list_object)</code> returns <code>list_object-&gt;ob_size</code>. For example, <code>len([1, 2, 3])</code> reads <code>ob_size</code> directly. There is no method call, no attribute lookup, and no extra overhead. It is just one memory read.</p>
+  
+      <h3>Why User-Defined Classes Don’t Get the Shortcut</h3>
+      <p>Custom classes do not have a fixed C struct. Python must call their <code>__len__()</code> method. When we call <code>len(obj)</code> on a user-defined object, Python finds <code>obj.__len__()</code> and runs it like a normal method. This is slower than built-ins, but it keeps the API consistent.</p>
+  
+      <h3>Data Model Consistency</h3>
+      <p><code>len()</code> is part of Python’s data model, like <code>abs()</code>, <code>iter()</code>, and <code>repr()</code>. Keeping it as a function gives a uniform interface. It lets CPython optimize built-ins. It keeps Python clean and predictable. This follows <a href="https://www.python.org/doc/humor/#the-zen-of-python" target="_blank">The Zen of Python</a>: <i>“Practicality beats purity”</i> and <i>“Special cases aren’t special enough to break the rules.”</i> Built-ins get a fast path under the hood, but the API stays consistent for all objects.</p>
+  
+      <h3>How <code>len()</code> Works Visually</h3>
+      <pre><code>
+                     🟢 len(x)
+                       │
+            ┌──────────┴──────────┐
+            │                     │
+    🏛 Built-in Type           🛠 User-defined
+    (list, str, tuple, ...)    (custom class)
+            │                     │
+     ⚡ Fast C Shortcut        🔍 Python Method Lookup
+     ┌────────────────┐       ┌───────────────────┐
+     │ Read ob_size   │       │ Find __len__()    │
+     │ from PyVarObj  │       │ Call Python method│
+     └────────────────┘       └───────────────────┘
+            │                     │
+            ▼                     ▼
+     ✅ Return length          ✅ Return length
+  (single memory read)    (normal Python call)
+      </code></pre>
+  
+      <p>For built-in objects, <code>len()</code> directly reads <code>ob_size</code>. For user-defined objects, Python calls <code>__len__()</code>. Both return the length, but built-ins are much faster.</p>
+      <p style="font-size:0.9em; color:#555; margin-top:2em;"><i>Source: Ramalho, L. <em>Fluent Python: Clear, Concise, and Effective Programming</em>. <a href="https://www.goodreads.com/book/show/22800567-fluent-python" target="_blank">Goodreads</a>, 2015.</i></p>
+
+    `,
+  },
+  {
     slug: "fluent-python-frenchdeck",
     title: "Flipping Through Fluent Python: The First Example ",
     genre: "Programming",
