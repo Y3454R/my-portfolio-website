@@ -1,6 +1,6 @@
 export const posts = [
   {
-    slug: "python-len-function-explained",
+    slug: "fluent-python-len",
     title: "A Short Lane to len() in Python",
     genre: "Programming",
     date: "November 15, 2025",
