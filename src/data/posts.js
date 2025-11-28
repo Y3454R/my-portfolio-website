@@ -1,5 +1,48 @@
 export const posts = [
   {
+    slug: "grammerly-recursion",
+    title: "Grammerly Recursion",
+    genre: "Science fiction",
+    date: "March 17, 2025",
+    author: "Samin Yeasar",
+    image: "/blogs/genocidal-organ.png",
+    caption:
+      "I actually got the idea from Genocidal Organ (2017). Now I want to read the book.",
+    content: `
+      <p>I was scrolling through Reddit when I found a thread where someone claimed they were even seeing ads in their dreams.</p>
+
+      <p>That instantly reminded me of Inception.</p>
+
+      <p>I watched the movie again — and fell asleep right after.</p>
+
+      <p>And then I dreamed that a scientist had invented a quantum-computing system capable of injecting advertisements directly into people's dreams.</p>
+
+      <p>Somehow, I had joined the project as a dream-copywriter.</p>
+
+      <p>When I woke up, I thought, <em>Wow, that's actually a brilliant idea.</em></p>
+
+      <p>So I decided to write a sci-fi story about it.</p>
+
+      <p>Right then, I saw an ad for an AI content-writing tool and thought, "Perfect! I should get this."</p>
+
+      <p><em>"Want to be a content creator? Get Akashkusum-AI today — the ultimate AI for the ultimate creator."</em></p>
+
+      <p>As I wrote that, it felt like a great plot twist.</p>
+
+      <p>Then I thought, <em>Maybe I should write the whole thing in English. I really should learn better English.</em></p>
+
+      <p>While thinking about that, I suddenly saw an ad for Shashi Tharoor's English mastery course…</p>
+
+      <p>Wow, this is actually a great idea! I should write a story about it. Suddenly, I saw an ad for a grammar-checking tool and thought, "Perfect! I should get this."</p>
+
+      <p>…</p>
+
+      <p>— "What the hell, why is the simulation entering recursion?"</p>
+
+      <p>— "I don't know, man! The quantum activation function is too unpredictable!"</p>
+    `,
+  },
+  {
     slug: "fluent-python-len",
     title: "A Short Lane to len() in Python",
     genre: "Programming",

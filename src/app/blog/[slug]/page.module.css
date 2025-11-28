@@ -28,14 +28,27 @@
   margin-bottom: 1rem;
 }
 
+.imageContainer {
+  margin: 1rem 0;
+}
+
 .image {
   width: 100%; /* Make the image take up the full width of the container */
   height: auto; /* Maintain aspect ratio for responsive resizing */
   max-height: 400px; /* Limit the height to ensure it doesn't take up too much space */
   object-fit: contain; /* Ensure the full image is visible without cropping */
   border: 1px solid #ddd; /* Optional border for aesthetics */
-  margin: 1rem 0;
   background-color: #f9f9f9; /* Add a subtle background to fill extra space */
+}
+
+.caption {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  padding: 0 1rem;
 }
 
 .content {
