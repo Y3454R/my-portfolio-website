@@ -37,15 +37,15 @@ export default function Sidebar() {
               <span className={styles.title}>Projects</span>
             </a>
           </li>
-          <li>
-            <a
-              href="/blog"
-              className={pathname === "/blog" ? styles.active : ""}
-            >
-              <span className={styles.emoji}>📝</span>
-              <span className={styles.title}>Blog</span>
-            </a>
-          </li>
+          // <li>
+          //   <a
+          //     href="/blog"
+          //     className={pathname === "/blog" ? styles.active : ""}
+          //   >
+          //     <span className={styles.emoji}>📝</span>
+          //     <span className={styles.title}>Blog</span>
+          //   </a>
+          // </li>
         </ul>
       </nav>
     </aside>
