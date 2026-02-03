@@ -45,18 +45,18 @@ export default function Footer() {
               </span>
             </a>
           </li>
-          <li>
-            <a
-              href="/blog"
-              className={`${styles.link} ${
-                pathname === "/blog" ? styles.active : ""
-              }`}
-            >
-              <span role="img" aria-label="blog" className={styles.emoji}>
-                📝
-              </span>
-            </a>
-          </li>
+          // <li>
+          //   <a
+          //     href="/blog"
+          //     className={`${styles.link} ${
+          //       pathname === "/blog" ? styles.active : ""
+          //     }`}
+          //   >
+          //     <span role="img" aria-label="blog" className={styles.emoji}>
+          //       📝
+          //     </span>
+          //   </a>
+          // </li>
         </ul>
       </nav>
     </footer>
