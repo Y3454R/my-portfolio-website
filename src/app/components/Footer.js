@@ -1,6 +1,6 @@
 "use client";
 import { usePathname } from "next/navigation";
-import styles from "./Footer.module.css"; // Import the footer styles
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -45,18 +45,20 @@ export default function Footer() {
               </span>
             </a>
           </li>
-          // <li>
-          //   <a
-          //     href="/blog"
-          //     className={`${styles.link} ${
-          //       pathname === "/blog" ? styles.active : ""
-          //     }`}
-          //   >
-          //     <span role="img" aria-label="blog" className={styles.emoji}>
-          //       📝
-          //     </span>
-          //   </a>
-          // </li>
+          {/*
+          <li>
+            <a
+              href="/blog"
+              className={`${styles.link} ${
+                pathname === "/blog" ? styles.active : ""
+              }`}
+            >
+              <span role="img" aria-label="blog" className={styles.emoji}>
+                📝
+              </span>
+            </a>
+          </li>
+          */}
         </ul>
       </nav>
     </footer>
