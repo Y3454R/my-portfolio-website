@@ -45,7 +45,7 @@ export default function Footer() {
               </span>
             </a>
           </li>
-          {/*
+
           <li>
             <a
               href="/blog"
@@ -58,7 +58,6 @@ export default function Footer() {
               </span>
             </a>
           </li>
-          */}
         </ul>
       </nav>
     </footer>

@@ -37,7 +37,7 @@ export default function Sidebar() {
               <span className={styles.title}>Projects</span>
             </a>
           </li>
-          {/*
+
           <li>
             <a
               href="/blog"
@@ -47,7 +47,6 @@ export default function Sidebar() {
               <span className={styles.title}>Blog</span>
             </a>
           </li>
-          */}
         </ul>
       </nav>
     </aside>
