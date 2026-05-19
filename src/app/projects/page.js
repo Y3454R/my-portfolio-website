@@ -1,26 +1,30 @@
-import styles from "./projects.module.css";
 import projects from "@/data/projects";
+
+const cleanName = (name) => name.replace(/^\p{Emoji}\s*/u, "");
 
 export default function Projects() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>🚀 Projects</h1>
-      <ul className={styles.projectsList}>
+    <div>
+<ul className="space-y-2">
         {projects.map((project, index) => (
-          <li key={index} className={styles.projectItem}>
-            <h2 className={styles.projectName}>
-              <a href={project.link}>{project.name}</a>
-            </h2>
-            <p
-              className={styles.projectDescription}
-              dangerouslySetInnerHTML={{ __html: project.description }}
-            />
+          <li key={index}>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-notion-text underline underline-offset-4 hover:text-notion-accent transition-colors"
+            >
+              {cleanName(project.name)}
+            </a>
           </li>
         ))}
       </ul>
-      <p>
-        To explore more, visit{" "}
-        <a href="https://www.github.com/y3454r">my GitHub profile.</a>
+
+      <p className="mt-8 text-sm text-notion-muted">
+        Explore more on{" "}
+        <a href="https://github.com/y3454r" target="_blank" rel="noopener noreferrer" className="text-notion-accent hover:underline">
+          GitHub
+        </a>
       </p>
     </div>
   );

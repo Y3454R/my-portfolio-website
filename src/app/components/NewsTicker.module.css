@@ -1,24 +1,26 @@
 .tickerContainer {
-  width: 100%; /* Full-width ticker */
-  overflow: hidden; /* Hide overflow content */
-  background-color: #222; /* Background for ticker */
-  color: #fff; /* Text color */
-  border: 1px solid #444; /* Optional border */
-  padding: 10px 0; /* Padding for better appearance */
-  position: relative; /* Ensure proper positioning */
+  width: 100%;
+  overflow: hidden;
+  background-color: #37352f;
+  color: #e8e5de;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: relative;
 }
 
 .tickerContent {
-  display: inline-block; /* Ensures the content is displayed in a single line */
-  white-space: nowrap; /* Prevent wrapping */
-  animation: scrollTicker linear infinite; /* Continuous scrolling */
+  display: inline-block;
+  white-space: nowrap;
+  animation: scrollTicker linear infinite;
+  font-size: 0.875rem;
+  padding: 0 1rem;
 }
 
 @keyframes scrollTicker {
   0% {
-    transform: translateX(100%); /* Start off-screen to the right */
+    transform: translateX(100vw);
   }
   100% {
-    transform: translateX(-100%); /* End off-screen to the left */
+    transform: translateX(-100%);
   }
 }

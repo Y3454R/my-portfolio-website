@@ -1,37 +1,30 @@
 "use client";
 import "./globals.css";
-import Sidebar from "@/app/components/Sidebar"; // Import Sidebar component
-import TopNav from "@/app/components/TopNav"; // Import TopNav component
-import styles from "./layout.module.css"; // Import CSS for layout
-import Footer from "./components/Footer";
+import TopNav from "@/app/components/TopNav";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Samin Yeasar</title>
         <link rel="icon" href="/favicon.png" type="image/png" />
+        {/* Prevent flash of wrong theme on load */}
+        <script dangerouslySetInnerHTML={{ __html: `
+          (function() {
+            var stored = localStorage.getItem('theme');
+            if (stored !== 'light') {
+              document.documentElement.classList.add('dark');
+            }
+          })();
+        `}} />
       </head>
-      <body>
-        <div className={styles.container}>
-          {/* Left Space */}
-          <div className={styles.leftSpace}></div>
-
-          {/* Wrapper Div */}
-          <div className={styles.wrapper}>
-            <TopNav />
-            <div className={styles.middleContent}>
-              <Sidebar />
-              <main className={styles.mainContent}>{children}</main>
-            </div>
-            <Footer />
-          </div>
-
-          {/* Right Space */}
-          <div className={styles.rightSpace}></div>
-        </div>
+      <body className="bg-notion-bg text-notion-text min-h-screen font-sans">
+        <TopNav />
+        <main className="max-w-2xl mx-auto px-6 py-12 pb-24 sm:pb-12">
+          {children}
+        </main>
       </body>
     </html>
   );

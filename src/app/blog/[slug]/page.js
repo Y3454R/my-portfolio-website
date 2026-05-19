@@ -1,36 +1,60 @@
-/* src/app/blog/[slug]/page.js */
-
 import { posts } from "@/data/posts";
-import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function BlogPost({ params }) {
   const { slug } = params;
   const post = posts.find((post) => post.slug === slug);
 
   if (!post) {
-    return <p>Blog post not found.</p>;
+    return (
+      <div className="text-notion-muted text-sm">
+        😶 Post not found.{" "}
+        <Link href="/blog" className="text-notion-accent hover:underline">
+          ← Back to blog
+        </Link>
+      </div>
+    );
   }
 
   return (
-    <article className={styles.article}>
-      <header className={styles.header}>
-        <h1>{post.title}</h1>
-        <p className={styles.meta}>
-          {post.genre} | {post.date} | {post.author}
+    <article>
+      <Link
+        href="/blog"
+        className="text-xs text-notion-muted hover:text-notion-accent transition-colors mb-6 inline-block"
+      >
+        ← Blog
+      </Link>
+
+      <header className="mt-2 mb-8">
+        <h1 className="text-2xl font-bold text-notion-text mb-2 leading-snug">
+          {post.title}
+        </h1>
+        <p className="text-xs text-notion-muted">
+          {post.genre} · {post.date} · ✍️ {post.author}
         </p>
         {post.image && (
-          <div className={styles.imageContainer}>
-            <img src={post.image} alt={post.title} className={styles.image} />
-            {post.caption && <p className={styles.caption}>{post.caption}</p>}
+          <div className="mt-6">
+            <img
+              src={post.image}
+              alt={post.title}
+              className="rounded-lg w-full object-cover max-h-64"
+            />
+            {post.caption && (
+              <p className="text-xs text-notion-muted text-center mt-2">
+                {post.caption}
+              </p>
+            )}
           </div>
         )}
       </header>
+
       <section
-        className={styles.content}
+        className="notion-prose text-sm text-justify"
         dangerouslySetInnerHTML={{ __html: post.content }}
-      ></section>
-      <footer className={styles.footer}>
-        <p>Thank you for reading! 🍩</p>
+      />
+
+      <footer className="mt-12 pt-6 border-t border-notion-border text-sm text-notion-muted">
+        🍩 Thanks for reading!
       </footer>
     </article>
   );

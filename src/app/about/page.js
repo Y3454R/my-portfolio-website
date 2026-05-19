@@ -1,150 +1,111 @@
 "use client";
-import styles from "./about.module.css"; // CSS Module for scoped styles
+import {
+  FaPython, FaJs, FaReact, FaNodeJs, FaSwift,
+} from "react-icons/fa";
+import {
+  SiCplusplus, SiExpress, SiGit, SiNextdotjs,
+  SiPostgresql, SiDocker, SiPytorch,
+} from "react-icons/si";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
-import {
-  FaPython,
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaLinkedin,
-  FaGithub,
-  FaGoodreads,
-  FaEnvelope,
-  FaSwift,
-} from "react-icons/fa"; // React Icons
-import {
-  SiCplusplus,
-  SiExpress,
-  SiGit,
-  SiNextdotjs,
-  SiPostgresql,
-  SiDocker,
-  SiPytorch,
-} from "react-icons/si"; // Specific icons
+const techRows = [
+  {
+    label: "Programming",
+    items: [
+      { icon: <SiCplusplus className="text-blue-600" />, name: "C++" },
+      { icon: <FaPython className="text-yellow-500" />, name: "Python" },
+      { icon: <FaJs className="text-yellow-400" />, name: "JavaScript" },
+      { icon: <FaSwift className="text-orange-400" />, name: "Swift" },
+    ],
+  },
+  {
+    label: "Backend",
+    items: [
+      { icon: <FaNodeJs className="text-green-600" />, name: "Node.js" },
+      { icon: <SiExpress />, name: "Express.js" },
+    ],
+  },
+  {
+    label: "Frontend",
+    items: [
+      { icon: <FaReact className="text-blue-400" />, name: "React.js" },
+      { icon: <SiNextdotjs />, name: "Next.js" },
+    ],
+  },
+  {
+    label: "Mobile",
+    items: [
+      { icon: <FaReact className="text-blue-400" />, name: "React Native" },
+    ],
+  },
+  {
+    label: "AI",
+    items: [
+      { icon: <SiPytorch className="text-red-500" />, name: "PyTorch" },
+    ],
+  },
+  {
+    label: "Database",
+    items: [
+      { icon: <SiPostgresql className="text-blue-700" />, name: "PostgreSQL" },
+    ],
+  },
+  {
+    label: "Tools",
+    items: [
+      { icon: <SiGit className="text-red-500" />, name: "Git" },
+      { icon: <SiDocker className="text-blue-500" />, name: "Docker" },
+    ],
+  },
+];
 
 export default function About() {
   return (
-    <section className={styles.aboutSection}>
-      <h1 className={styles.title}>✏️ README.md</h1>
-      <div className={styles.qaContainer}>
-        <div className={styles.qaItem}>
-          <h3>💼</h3>
-          <p>
-            Currently, I work as a Software Engineer at{" "}
-            <a
-              href="https://www.codemarshal.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+    <div className="space-y-10">
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-semibold text-notion-muted uppercase tracking-wider underline underline-offset-4">Work</h2>
+        <div className="border-l-2 border-notion-accent pl-3">
+          <p className="text-sm font-medium text-notion-text">
+            <a href="https://www.codemarshal.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">
               CodeMarshal IT Systems
             </a>
-            , focusing mostly on Web technologies, OCR and Computer Vision since
-            February 2024.
           </p>
+          <p className="text-xs text-notion-muted mt-0.5">Software Engineer · web, ocr, computer vision</p>
         </div>
-        <div className={styles.qaItem}>
-          <h3>🎓</h3>
-          <p>
-            I hold a B.Sc in CSE from KUET with a CGPA of{" "}
-            <span style={{ color: "#71b69c" }}>3.24/4.00</span>. My roll number
-            was <span style={{ color: "#71b69c" }}>1507099</span>. Nearly
-            dropped out, but that’s a story for another time!
-          </p>
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="text-xs font-semibold text-notion-muted uppercase tracking-wider underline underline-offset-4">Education</h2>
+        <div className="border-l-2 border-notion-accent pl-3">
+          <p className="text-sm font-medium text-notion-text">KUET</p>
+          <p className="text-xs text-notion-muted mt-0.5">BSc CSE · CGPA 3.24 (3.54 last 4 semesters)</p>
         </div>
-        <div className={styles.qaItem}>
-          <h3>🔧</h3>
-          <p>
-            Programming:{" "}
-            <b>
-              <SiCplusplus style={{ color: "#00599C" }} /> C++{" "}
-              <FaPython style={{ color: "#FFD43B" }} /> Python{" "}
-              <FaJs style={{ color: "#F0DB4F" }} /> JavaScript{" "}
-              <FaSwift style={{ color: "#FFAC45" }} /> Swift{" "}
-            </b>
-          </p>
-          <p>
-            Backend:{" "}
-            <b>
-              <FaNodeJs style={{ color: "#68A063" }} /> Node.js{" "}
-              <SiExpress style={{ color: "#000000" }} /> Express.js{" "}
-            </b>
-          </p>
-          <p>
-            Frontend:{" "}
-            <b>
-              <FaReact style={{ color: "#61DBFB" }} /> React.js{" "}
-              <SiNextdotjs style={{ color: "#000000" }} /> Next.js{" "}
-            </b>
-          </p>
-          <p>
-            Mobile Application:{" "}
-            <b>
-              <FaReact style={{ color: "#61DBFB" }} /> React Native{" "}
-            </b>
-          </p>
-          <p>
-            AI:{" "}
-            <b>
-              <SiPytorch style={{ color: "#EE4C2C" }} /> PyTorch
-            </b>
-          </p>
-          <p>
-            Database:{" "}
-            <b>
-              <SiPostgresql style={{ color: "#336791" }} /> PostgreSQL{" "}
-            </b>
-          </p>
-          <p>
-            Tools:{" "}
-            <b>
-              <SiGit style={{ color: "#F05033" }} /> Git{" "}
-              <SiDocker style={{ color: "#2496ED" }} /> Docker{" "}
-            </b>
-          </p>
+      </section>
+
+      <section>
+        <h2 className="text-xs font-semibold text-notion-muted uppercase tracking-wider underline underline-offset-4 mb-3">Stack</h2>
+        <div className="border-l-2 border-notion-accent pl-3 space-y-2">
+          {techRows.map(({ label, items }) => (
+            <div key={label} className="flex items-start gap-3 text-sm">
+              <span className="text-notion-muted w-24 shrink-0 pt-0.5">{label}</span>
+              <div className="flex flex-wrap gap-2">
+                {items.map(({ icon, name }) => (
+                  <span key={name} className="inline-flex items-center gap-1 px-2 py-0.5 bg-notion-sidebar border border-notion-border rounded text-notion-text">
+                    {icon}
+                    {name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
-        <div className={styles.qaItem}>
-          <h3>📟</h3>
-          <p>
-            Ping me @{" "}
-            <a
-              className={styles.icon}
-              target="_blank"
-              rel="noopener"
-              href="https://github.com/y3454r"
-            >
-              <FaGithub style={{ color: "#333" }} /> {/* GitHub Icon */}
-            </a>
-            ,{" "}
-            <a
-              className={styles.icon}
-              target="_blank"
-              rel="noopener"
-              href="https://www.linkedin.com/in/samin-yeasar-abir/"
-            >
-              <FaLinkedin style={{ color: "#0077B5" }} /> {/* LinkedIn Icon */}
-            </a>
-            ,{" "}
-            <a
-              className={styles.icon}
-              target="_blank"
-              rel="noopener"
-              href="https://www.goodreads.com/user/show/69334929-abir-yeasar"
-            >
-              <FaGoodreads style={{ color: "#372213" }} />{" "}
-              {/* Goodreads Icon */}
-            </a>
-            , and{" "}
-            <a
-              className={styles.icon}
-              target="_blank"
-              rel="noopener"
-              href="mailto:syeasar.kuet@gmail.com"
-            >
-              <FaEnvelope style={{ color: "#EA4335" }} /> {/* Email Icon */}
-            </a>
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+
+      <p className="text-xs text-notion-muted flex items-center gap-1">
+        <FaMapMarkerAlt size={10} /> Dhaka, Bangladesh
+      </p>
+
+    </div>
   );
 }
