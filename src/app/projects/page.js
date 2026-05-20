@@ -7,7 +7,8 @@ export default function Projects() {
     <div>
 <ul className="space-y-2">
         {projects.map((project, index) => (
-          <li key={index}>
+          <li key={index} className="flex items-center gap-2">
+            <span className="text-notion-accent text-xs">▸</span>
             <a
               href={project.link}
               target="_blank"

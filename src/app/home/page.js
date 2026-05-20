@@ -28,7 +28,7 @@ const socialLinks = [
 
 export default function Home() {
   return (
-    <div className="py-16 flex flex-col items-center text-center max-w-sm mx-auto">
+    <div className="py-4 sm:py-16 flex flex-col items-center text-center max-w-sm mx-auto">
       <img
         src="/my_dp.jpg"
         alt="Samin Yeasar"

@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-notion-bg text-notion-text min-h-screen font-sans">
         <TopNav />
-        <main className="max-w-2xl mx-auto px-6 py-12 pb-24 sm:pb-12">
+        <main className="max-w-2xl mx-auto px-6 pt-6 pb-24 sm:pt-12 sm:pb-12">
           {children}
         </main>
       </body>
