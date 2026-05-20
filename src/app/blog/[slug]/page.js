@@ -30,7 +30,7 @@ export default function BlogPost({ params }) {
           {post.title}
         </h1>
         <p className="text-xs text-notion-muted">
-          {post.genre} · {post.date} · ✍️ {post.author}
+          {post.genre} | {post.date}
         </p>
         {post.image && (
           <div className="mt-6">
@@ -53,8 +53,8 @@ export default function BlogPost({ params }) {
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
 
-      <footer className="mt-12 pt-6 border-t border-notion-border text-sm text-notion-muted">
-        🍩 Thanks for reading!
+      <footer className="mt-12 pt-6 border-t border-notion-border text-sm text-notion-muted text-center">
+        🍩 読んでくれてありがとう
       </footer>
     </article>
   );
