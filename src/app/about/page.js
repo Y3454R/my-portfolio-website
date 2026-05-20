@@ -9,7 +9,7 @@ import {
   SiDocker,
   SiPytorch,
 } from "react-icons/si";
-import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const techRows = [
   {
@@ -107,7 +107,7 @@ export default function About() {
             B.Sc. in Computer Science & Engineering
           </p>
           <p className="text-xs text-notion-muted mt-0.5">
-            CGPA: 3.24 • Last 4 Semesters Avg: 3.54
+            CGPA: 3.24 / 4.00 • Last 4 Semesters Avg: 3.54
           </p>
         </div>
       </section>
@@ -157,6 +157,22 @@ export default function About() {
             className="text-xs text-notion-muted hover:text-notion-accent transition-colors flex items-center gap-2"
           >
             <FaPhone size={10} /> +880 1733 066769
+          </a>
+          <a
+            href="https://www.linkedin.com/in/samin-yeasar-abir/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-notion-muted hover:text-notion-accent transition-colors flex items-center gap-2"
+          >
+            <FaLinkedin size={10} /> linkedin.com/in/samin-yeasar-abir
+          </a>
+          <a
+            href="https://github.com/Y3454R"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-notion-muted hover:text-notion-accent transition-colors flex items-center gap-2"
+          >
+            <FaGithub size={10} /> github.com/Y3454R
           </a>
         </div>
       </section>
