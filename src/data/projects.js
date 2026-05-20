@@ -27,7 +27,7 @@ const projects = [
     link: "https://github.com/Y3454R/Foodbuzz",
   },
   {
-    name: "🐯 Speech to Sign Language Translator Application",
+    name: "🐯 Speech to Sign Language Translator",
     description: `An academic group project for CSE 3200: System Development Laboratory, in partnership with <a href="https://www.linkedin.com/in/ashikur-rahman-kuet/">Ashikur Rahman</a>. I believe the project's name is self-explanator. <a href="https://pypi.org/project/ASvid/"><b>ASvid</b>, a video utility ${spanHead}Python${spanTail} module, was built and released during this development process.</a>`,
     link: "https://github.com/Y3454R/Speech-to-Sign-Language-Translator-Application",
   },
