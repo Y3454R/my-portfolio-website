@@ -3,6 +3,7 @@ import { FaPython, FaJs, FaReact, FaNodeJs, FaSwift } from "react-icons/fa";
 import {
   SiCplusplus,
   SiExpress,
+  SiFastapi,
   SiGit,
   SiNextdotjs,
   SiPostgresql,
@@ -15,15 +16,16 @@ const techRows = [
   {
     label: "Programming",
     items: [
-      { icon: <SiCplusplus className="text-blue-600" />, name: "C++" },
       { icon: <FaPython className="text-yellow-500" />, name: "Python" },
       { icon: <FaJs className="text-yellow-400" />, name: "JavaScript" },
+      { icon: <SiCplusplus className="text-blue-600" />, name: "C++" },
       // { icon: <FaSwift className="text-orange-400" />, name: "Swift" },
     ],
   },
   {
     label: "Backend",
     items: [
+      { icon: <SiFastapi className="text-teal-500" />, name: "FastAPI" },
       { icon: <FaNodeJs className="text-green-600" />, name: "Node.js" },
       { icon: <SiExpress />, name: "Express.js" },
     ],

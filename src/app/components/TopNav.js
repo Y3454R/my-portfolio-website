@@ -7,7 +7,7 @@ const navItems = [
   { href: "/home",     label: "Home"     },
   { href: "/about",    label: "About"    },
   { href: "/projects", label: "Projects" },
-  { href: "/blog",     label: "Blog"     },
+  { href: "/blog",     label: "Blogs"    },
 ];
 
 export default function TopNav() {
@@ -51,7 +51,7 @@ export default function TopNav() {
             key={href}
             href={href}
             className={`hidden sm:block text-sm transition-colors ${
-              pathname === href
+              pathname.startsWith(href)
                 ? "text-notion-text underline underline-offset-4"
                 : "text-notion-muted hover:text-notion-text"
             }`}
@@ -77,7 +77,7 @@ export default function TopNav() {
             key={href}
             href={href}
             className={`flex-1 py-3 text-center text-xs transition-colors ${
-              pathname === href
+              pathname.startsWith(href)
                 ? "text-notion-accent font-medium"
                 : "text-notion-muted"
             }`}
