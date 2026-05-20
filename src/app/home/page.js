@@ -43,18 +43,24 @@ export default function Home() {
         have been building web applications for a while, and recently started
         getting my hands dirty in deep learning and computer vision.
       </p>
-
       <p className="text-notion-text text-sm leading-relaxed mb-3 text-justify">
+        I use AI to write code. But I like to take ownership of my code by
+        reading, understanding, and maintaining it myself. I believe in the{" "}
+        <em>KISS</em> ("Keep it simple, stupid") principle. I always try to keep
+        my code simple and explainable.
+      </p>
+      <p className="text-notion-text text-sm leading-relaxed mb-6 text-justify">
         During my free time, I read fiction, watch anime, and overthink things
         with an LLM.
       </p>
 
-      <p className="text-notion-text text-sm leading-relaxed mb-6 text-justify">
-        Yes, I use AI to write code. But I take ownership of my code by reading,
-        understanding, and maintaining it myself. I believe in the KISS
-        principle. Keep it simple, stupid. I always try to write simple and
-        explainable code.
-      </p>
+      {/* <p className="text-notion-text text-sm leading-relaxed mb-6 text-justify">
+        Yes, I use AI to write code. But I like to take ownership of my code by
+        reading every line, validating its logic by asking it questions, and
+        maintaining it myself. I believe in the <em>KISS</em> (
+        <quote>Keep it simple, stupid.</quote>) principle. I always try to write
+        simple and explainable code.
+      </p> */}
       <div className="flex items-center gap-3">
         {socialLinks.map(({ href, icon: Icon, label }) => (
           <a
