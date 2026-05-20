@@ -4,20 +4,17 @@ import TopNav from "@/app/components/TopNav";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="dark">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Samin Yeasar</title>
         <link rel="icon" href="/favicon.png" type="image/png" />
-        {/* Prevent flash of wrong theme on load */}
+        {/* Remove dark class only if user explicitly chose light */}
         <script dangerouslySetInnerHTML={{ __html: `
-          (function() {
-            var stored = localStorage.getItem('theme');
-            if (stored !== 'light') {
-              document.documentElement.classList.add('dark');
-            }
-          })();
+          if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.remove('dark');
+          }
         `}} />
       </head>
       <body className="bg-notion-bg text-notion-text min-h-screen font-sans">
