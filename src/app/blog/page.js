@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Blog() {
   return (
     <div>
-      <p className="text-notion-muted text-sm mb-6">
-        🐛 here to practice my bug-স্বাধীনতা ⛓️‍💥
+      <p className="text-notion-muted text-sm mb-6 border-l-2 border-notion-accent pl-3 italic">
+        here to practice my "bug-স্বাধীনতা"
       </p>
       <div className="divide-y divide-notion-border">
         {posts.map((post) => (
