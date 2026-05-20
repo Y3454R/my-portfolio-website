@@ -44,7 +44,7 @@ export default function Home() {
         getting my hands dirty in deep learning and computer vision.
       </p>
       <p className="text-notion-text text-sm leading-relaxed mb-3 text-justify">
-        I use AI to write code. But I like to take ownership of my code by
+        I use AI to generate code. But I like to take ownership of the code by
         reading, understanding, and maintaining it myself. I believe in the{" "}
         <em>KISS</em> ("Keep it simple, stupid") principle. I always try to keep
         my code simple and explainable.
