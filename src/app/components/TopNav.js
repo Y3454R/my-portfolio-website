@@ -13,6 +13,7 @@ const navItems = [
 export default function TopNav() {
   const pathname = usePathname();
   const [dark, setDark] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     setDark(document.documentElement.classList.contains("dark"));
@@ -74,32 +75,53 @@ export default function TopNav() {
         >
           CV
         </a>
+
+        {/* Hamburger button — mobile only */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+          className="sm:hidden flex items-center justify-center w-9 h-9 text-notion-muted hover:text-notion-accent transition-colors shrink-0"
+        >
+          {menuOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+              <path d="M18 6 6 18M6 6l12 12"/>
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+              <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          )}
+        </button>
       </nav>
 
-      {/* Mobile bottom nav */}
-      <nav className="sm:hidden fixed bottom-0 left-0 right-0 z-20 bg-notion-bg border-t border-notion-border flex">
-        {navItems.map(({ href, label }) => (
-          <Link
-            key={href}
-            href={href}
-            className={`flex-1 py-3 text-center text-xs transition-colors ${
-              pathname.startsWith(href)
-                ? "text-notion-accent font-medium underline underline-offset-2"
-                : "text-notion-muted"
-            }`}
+      {/* Mobile dropdown menu */}
+      {menuOpen && (
+        <div className="sm:hidden border-b border-notion-border bg-notion-bg">
+          {navItems.map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              onClick={() => setMenuOpen(false)}
+              className={`block px-6 py-3 text-sm text-center transition-colors border-b border-notion-border/50 last:border-0 ${
+                pathname.startsWith(href)
+                  ? "text-notion-accent font-medium"
+                  : "text-notion-muted hover:text-notion-text"
+              }`}
+            >
+              {label}
+            </Link>
+          ))}
+          <a
+            href="/cv/CV_Samin_Yeasar_2027.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMenuOpen(false)}
+            className="block px-6 py-3 text-sm text-center text-notion-muted hover:text-notion-text transition-colors"
           >
-            {label}
-          </Link>
-        ))}
-        <a
-          href="/cv/CV_Samin_Yeasar_2027.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1 py-3 text-center text-xs text-notion-muted"
-        >
-          CV
-        </a>
-      </nav>
+            CV
+          </a>
+        </div>
+      )}
     </>
   );
 }
