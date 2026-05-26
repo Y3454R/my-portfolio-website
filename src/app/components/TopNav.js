@@ -52,7 +52,7 @@ export default function TopNav() {
             href={href}
             className={`hidden sm:block text-sm transition-colors ${
               pathname.startsWith(href)
-                ? "text-notion-text underline underline-offset-4"
+                ? "text-notion-accent underline underline-offset-4"
                 : "text-notion-muted hover:text-notion-text"
             }`}
           >
@@ -78,7 +78,7 @@ export default function TopNav() {
             href={href}
             className={`flex-1 py-3 text-center text-xs transition-colors ${
               pathname.startsWith(href)
-                ? "text-notion-accent font-medium"
+                ? "text-notion-accent font-medium underline underline-offset-2"
                 : "text-notion-muted"
             }`}
           >
