@@ -4,10 +4,10 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 const navItems = [
-  { href: "/home",     label: "Home"     },
-  { href: "/about",    label: "About"    },
+  { href: "/home", label: "Home" },
+  { href: "/about", label: "About" },
   { href: "/projects", label: "Projects" },
-  { href: "/blog",     label: "Blogs"    },
+  { href: "/blog", label: "Blogs" },
 ];
 
 export default function TopNav() {
@@ -36,19 +36,38 @@ export default function TopNav() {
           className="relative w-9 h-9 flex items-center justify-center text-notion-muted hover:text-notion-accent transition-colors shrink-0"
         >
           {/* Sun — light mode */}
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-            className={`absolute w-5 h-5 transition-all duration-300 ${dark ? "scale-0 opacity-0" : "scale-100 opacity-100"}`}>
-            <circle cx="12" cy="12" r="4"/>
-            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={`absolute w-5 h-5 transition-all duration-300 ${dark ? "scale-0 opacity-0" : "scale-100 opacity-100"}`}
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
           </svg>
           {/* Moon — dark mode */}
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-            className={`absolute w-5 h-5 transition-all duration-300 ${dark ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}>
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={`absolute w-5 h-5 transition-all duration-300 ${dark ? "scale-100 opacity-100" : "scale-0 opacity-0"}`}
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
           </svg>
         </button>
 
-        <Link href="/home" className="text-sm font-medium text-notion-text mr-auto">
+        <Link
+          href="/home"
+          className="text-sm font-medium text-notion-text mr-auto"
+        >
           Samin Yeasar
         </Link>
 
@@ -68,7 +87,7 @@ export default function TopNav() {
         ))}
 
         <a
-          href="/cv/CV_Samin_Yeasar_2027.pdf"
+          href="/cv/samin_yeasar_cv_june_2026.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden sm:block text-sm text-notion-muted hover:text-notion-text transition-colors"
@@ -83,12 +102,30 @@ export default function TopNav() {
           className="sm:hidden flex items-center justify-center w-9 h-9 text-notion-muted hover:text-notion-accent transition-colors shrink-0"
         >
           {menuOpen ? (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-              <path d="M18 6 6 18M6 6l12 12"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-5 h-5"
+            >
+              <path d="M18 6 6 18M6 6l12 12" />
             </svg>
           ) : (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-              <path d="M4 6h16M4 12h16M4 18h16"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-5 h-5"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           )}
         </button>
@@ -112,7 +149,7 @@ export default function TopNav() {
             </Link>
           ))}
           <a
-            href="/cv/CV_Samin_Yeasar_2027.pdf"
+            href="/cv/samin_yeasar_cv_june_2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
