@@ -87,7 +87,7 @@ export default function TopNav() {
         ))}
 
         <a
-          href="/cv/samin_yeasar_cv_june_2026.pdf"
+          href="/cv/Samin_Yeasar_CV_August_2026.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden sm:block text-sm text-notion-muted hover:text-notion-text transition-colors"
@@ -149,7 +149,7 @@ export default function TopNav() {
             </Link>
           ))}
           <a
-            href="/cv/samin_yeasar_cv_june_2026.pdf"
+            href="/cv/Samin_Yeasar_CV_August_2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMenuOpen(false)}
