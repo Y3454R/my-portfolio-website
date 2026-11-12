@@ -46,7 +46,7 @@ export default function Home() {
       <p className="text-notion-text text-sm leading-relaxed mb-3 text-justify">
         I use AI to generate code. But I like to take ownership of the code by
         reading, understanding, and maintaining it myself. I believe in the{" "}
-        <em>KISS</em> ("Keep it simple, stupid") principle and always try to
+        <em>KISS</em> (&quot;Keep it simple, stupid&quot;) principle and always try to
         keep my code simple, readable, and explainable.
       </p>
       <p className="text-notion-text text-sm leading-relaxed mb-6 text-justify">

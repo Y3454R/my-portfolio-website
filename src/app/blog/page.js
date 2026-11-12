@@ -5,7 +5,7 @@ export default function Blog() {
   return (
     <div>
       <p className="text-notion-muted text-sm mb-6 border-l-2 border-notion-accent pl-3 italic">
-        here to practice my "bug-স্বাধীনতা"
+        here to practice my &quot;bug-স্বাধীনতা&quot;
       </p>
       <div className="divide-y divide-notion-border">
         {posts.map((post) => (
