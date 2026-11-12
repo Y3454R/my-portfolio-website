@@ -39,28 +39,21 @@ export default function Home() {
         Engineer · Reader · Curious
       </p>
       <p className="text-notion-text text-sm leading-relaxed mb-3 text-justify">
-        I am a CSE grad from KUET, currently working as a software engineer. I
-        have been building web applications for a while, and recently started
-        getting my hands dirty in deep learning and computer vision.
+        I’m a software engineer with 2+ years of experience. I’ve been building
+        web applications for a while and have recently started getting my hands
+        dirty with deep learning and computer vision.
       </p>
       <p className="text-notion-text text-sm leading-relaxed mb-3 text-justify">
         I use AI to generate code. But I like to take ownership of the code by
         reading, understanding, and maintaining it myself. I believe in the{" "}
-        <em>KISS</em> ("Keep it simple, stupid") principle. I always try to keep
-        my code simple and explainable.
+        <em>KISS</em> ("Keep it simple, stupid") principle and always try to
+        keep my code simple, readable, and explainable.
       </p>
       <p className="text-notion-text text-sm leading-relaxed mb-6 text-justify">
-        During my free time, I read fiction, watch anime, and overthink things
-        with an LLM.
+        In my free time, I read fiction, watch anime, and overthink things with
+        an LLM.
       </p>
 
-      {/* <p className="text-notion-text text-sm leading-relaxed mb-6 text-justify">
-        Yes, I use AI to write code. But I like to take ownership of my code by
-        reading every line, validating its logic by asking it questions, and
-        maintaining it myself. I believe in the <em>KISS</em> (
-        <quote>Keep it simple, stupid.</quote>) principle. I always try to write
-        simple and explainable code.
-      </p> */}
       <div className="flex items-center gap-3">
         {socialLinks.map(({ href, icon: Icon, label }) => (
           <a
